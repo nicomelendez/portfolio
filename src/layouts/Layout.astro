@@ -1,0 +1,82 @@
+---
+import '@fontsource-variable/rubik'
+import { ViewTransitions } from 'astro:transitions'
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      name='description'
+      content='Técnico Superior en Informática y actualmente curso el quinto semestre de la carrera de Tecnologías de la Información en UTEC. A lo largo de mi formación, he utilizando tecnologías como Astro, Next.js, Node.js, JavaEE, JavaServer Pages, SQL Developer y MongoDB.'
+    />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link
+      rel='stylesheet'
+      type='text/css'
+      href='https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css'
+    />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  :root {
+    --color-primary: #2563eb;
+    --color-secondary: #fff;
+    --color-tertiary: #000;
+    --background-image: #eff2f8;
+  }
+  
+  html {
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  #app {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-rows: 85px 1fr auto;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: theme('colors.primary');
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background-image);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: var(--background-image);
+  }
+</style>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/toastify-js'
+></script>
