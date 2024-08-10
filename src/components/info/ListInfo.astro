@@ -1,0 +1,22 @@
+---
+import InfoItem from "./InfoItem.astro";
+import { informations } from "@/lib/index.ts";
+---
+
+<h3 class="text-xl mb-2 mt-6 font-bold text-[#0DBC5C]">
+  Información de interés
+</h3>
+<div
+  class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 w-full place-content-center lg:place-items-center pb-10"
+>
+  {
+    informations.map((info) => {
+      return <InfoItem {...info} />;
+    })
+  }
+</div>
+<style>
+  .sombra {
+    filter: drop-shadow(-2px 0px 5px rgba(0, 0, 0, 0.1));
+  }
+</style>

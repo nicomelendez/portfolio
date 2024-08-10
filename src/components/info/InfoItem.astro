@@ -1,0 +1,46 @@
+---
+import InfoIcon from "@/components/icons/InfoIcon.astro";
+
+const { img, fecha, titulo, resumen, path } = Astro.props;
+---
+
+<article
+  class="flex flex-col max-w-[500px] justify-between gap-y-6 bg-white rounded-lg sombra animacion hover:shadow-lg transition-all duration-500"
+>
+  <div class="flex flex-col gap-y-6">
+    <picture class="flex flex-col">
+      <img
+        loading="lazy"
+        src={`${img}`}
+        class="object-cover h-[240px] rounded-t-lg sombra"
+        alt={`Imagen de ${titulo}`}
+      />
+    </picture>
+
+    <div class="flex flex-col gap-y-4 px-5 justify-between">
+      <div class="flex flex-col gap-y-4 min-h-[170px]">
+        <span
+          class="rounded-full text-xs w-[50px] bg-emerald-100 text-emerald-700 flex justify-center items-center px-2 py-1 shadow-lg"
+        >
+          {fecha}
+        </span>
+        <h3 class="font-bold text-gray-900">{titulo}</h3>
+
+        <p class="text-xs md:text-sm text-pretty">{resumen}</p>
+      </div>
+
+      <div class="flex items-center justify-end">
+        <a
+          href={`/info/${path}`}
+          class="flex items-center gap-x-2 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs text-white py-2 px-3 shadow-md"
+        >
+          <InfoIcon />
+          Saber más
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <span class="h-2 bg-gradient-to-r from-green-300 to-emerald-500 rounded-b-lg"
+  ></span>
+</article>
