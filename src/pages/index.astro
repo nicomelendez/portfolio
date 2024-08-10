@@ -1,8 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Hero from '@/components/sections/Hero.astro';
+import Proyects from '@/components/sections/Proyects.astro';
+import WaveDown from '@/components/wave/WaveDown.astro';
+import WaveUp from '@/components/wave/WaveUp.astro';
+import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Porfolio de Nicolás Meléndez - Desarrollador y Programador Web.">
-	<h1 class="text-center">Nicolás Meléndez</h1>
+	<Hero/>
+	<WaveUp/>
+	<Proyects/>
+	<WaveDown/>
 </Layout>
 

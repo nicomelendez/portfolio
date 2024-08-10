@@ -1,18 +1,17 @@
-/* import type { Info, Proyect, Study, Contact } from '@/interfaces'
-import GitHubIcon from '@/components/icon/Github.astro'
-import LinkedinIcon from '@/components/icon/LinkedIn.astro'
-import NextJS from '@/components/icon/NextJS.astro'
-import Tailwind from '@/components/icon/Tailwind.astro'
-import Astro from '@/components/icon/Astro.astro'
-import Java from '@/components/icon/Java.astro'
-import WildFly from '@/components/icon/WildFly.astro'
-import MongoDb from '@/components/icon/MongoDb.astro'
-import Cloudinary from '@/components/icon/Cloudinary.astro'
-import Jsp from '@/components/icon/Jsp.astro'
-import SqlDeveloper from '@/components/icon/SqlDeveloper.astro'
-import Code from '@/components/icon/Code.astro'
-import User from '@/components/icon/User.astro'
-import ContactIcon from '@/components/icon/Contact.astro'
+import GitHub from '@/components/icons/GitHub.astro'
+import LinkedinIcon from '@/components/icons/LinkedIn.astro'
+import NextJS from '@/components/icons/NextJS.astro'
+import Tailwind from '@/components/icons/Tailwind.astro'
+import Astro from '@/components/icons/Astro.astro'
+import Java from '@/components/icons/Java.astro'
+import WildFly from '@/components/icons/WildFly.astro'
+import MongoDb from '@/components/icons/MongoDb.astro'
+import Cloudinary from '@/components/icons/Cloudinary.astro'
+import Jsp from '@/components/icons/Jsp.astro'
+import SqlDeveloper from '@/components/icons/SqlDeveloper.astro'
+import Code from '@/components/icons/Code.astro'
+import User from '@/components/icons/User.astro'
+import ContactIcon from '@/components/icons/Contact.astro'
 
 export const navs = [
   {
@@ -35,10 +34,10 @@ export const navs = [
   },
 ]
 
-export const contacts: Contact[] = [
+export const contacts: any[] = [
   {
     id: 1,
-    icon: GitHubIcon,
+    icon: GitHub,
     url: 'https://github.com/nicomelendez',
   },
   {
@@ -102,7 +101,7 @@ const TAGS = {
   },
 }
 
-export const proyects: Proyect[] = [
+export const proyects: any[] = [
   {
     id: 1,
     title: 'Cuanti',
@@ -201,7 +200,7 @@ export const proyects: Proyect[] = [
   },
 ]
 
-export const informations: Info[] = [
+export const informations: any[] = [
   {
     id: 1,
     titulo: 'Proyecto Infraestructura 3er semestre',
@@ -284,4 +283,3 @@ export const informations: Info[] = [
       'Participar en el desafío de la NASA Space Apps Challenge fue una oportunidad única para desarrollar habilidades blandas clave. Trabajar en equipo me enseñó la importancia de la comunicación efectiva, la colaboración y la capacidad de defender nuestras ideas. Aprendimos a escuchar, a comprometernos con las opiniones de los demás y a resolver conflictos de manera constructiva.',
   },
 ]
- */
