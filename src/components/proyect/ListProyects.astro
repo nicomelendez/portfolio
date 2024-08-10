@@ -1,0 +1,38 @@
+---
+import { proyects } from "@/lib/index.ts";
+import ProyectoItem from "./ProyectItem.astro";
+---
+
+<div
+  class="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 py-5 md:py-10 w-full gap-y-20 place-content-center place-items-center pb-20"
+>
+  {
+    proyects.map(
+      ({
+        title,
+        description,
+        image,
+        url,
+        repository,
+        online,
+        resumen,
+        technologies,
+        path,
+      }) => {
+        return (
+          <ProyectoItem
+            title={title}
+            description={description}
+            resumen={resumen}
+            image={image}
+            repository={repository}
+            online={online}
+            url={url}
+            technologies={technologies}
+            path={path}
+          />
+        );
+      }
+    )
+  }
+</div>

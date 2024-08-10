@@ -1,0 +1,20 @@
+---
+import BtnVisitar from "@/components/btn/BtnVisitar.astro";
+import BtnGithub from "@/components/btn/BtnGithub.astro";
+
+interface Props {
+  online: boolean;
+  repository: string;
+  view: boolean;
+  url: string;
+  path: string;
+}
+
+const { online, repository, url } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-2 w-ful items-end">
+  {online && <BtnVisitar url={url} />}
+
+  {repository !== "-" && <BtnGithub repository={repository} />}
+</div>

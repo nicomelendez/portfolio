@@ -1,0 +1,28 @@
+---
+import { navs } from '@/lib/index.ts'
+---
+
+<header class="bg-primary">
+  <div id='inicio'></div>
+  <nav
+    class='hidden sm:flex justify-center items-center py-12'
+  >
+    <ul class='flex items-center justify-center gap-x-8'>
+      {
+        navs.map((item) => {
+          return (
+            <li>
+              <a
+                href={`${item.url}`}
+                class='hover:underline sombra flex items-center gap-x-2 text-gray-800 text-lg '
+              >
+                <item.icon class='w-5 h-5' />
+                {item.text}
+              </a>
+            </li>
+          )
+        })
+      }
+    </ul>
+  </nav>
+</header>

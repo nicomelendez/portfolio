@@ -1,0 +1,42 @@
+---
+import ButtonsProyects from "./ButtonsProyects.astro";
+import TechnologiesProyect from "./TechnologiesProyect.astro";
+const { title, image, url, repository, online, resumen, technologies, path } =
+  Astro.props;
+---
+
+<article class="space-y-5 animacion max-w-[500px]">
+  <picture class="rounded-[10px] sombra">
+    <img
+      loading="lazy"
+      class="w-full aspect-video object-fill rounded-[10px] "
+      src={image}
+      alt={`Imagen de la web ${title}`}
+    />
+  </picture>
+  <TechnologiesProyect technologies={technologies} />
+  <div class="flex flex-col gap-y-5 justify-between h-[150px]">
+    <div class="flex flex-col gap-y-2">
+      <h3 class="text-xl font-extrabold text-gray-900">
+        {title}
+      </h3>
+      <p class="block text-sm text-gray-500 texto">{resumen}</p>
+    </div>
+
+    <ButtonsProyects
+      online={online}
+      repository={repository}
+      url={url}
+      path={path}
+      view={true}
+    />
+  </div>
+</article>
+<style>
+  .sombra {
+    filter: drop-shadow(-2px 0px 5px rgba(0, 0, 0, 0.1));
+  }
+  .texto {
+    text-wrap: pretty;
+  }
+</style>

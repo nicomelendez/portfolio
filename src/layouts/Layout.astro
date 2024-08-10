@@ -1,4 +1,7 @@
 ---
+import Background from '@/components/layout/Background.astro'
+import Footer from '@/components/layout/Footer.astro'
+import Header from '@/components/layout/Header.astro'
 import '@fontsource-variable/rubik'
 import { ViewTransitions } from 'astro:transitions'
 
@@ -28,14 +31,21 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body>
-    <slot />
+    <Background/>
+    <div id="app" class="md:max-w-[1550px] xl:max-w-[1650px] mx-auto sombra">
+      <Header/>
+      <main>
+        <slot />
+      </main>
+      <Footer/>
+    </div>
   </body>
 </html>
 <style is:global>
   :root {
-    --color-primary: #2563eb;
+    --color-primary: #E3F7EB;
     --color-secondary: #fff;
-    --color-tertiary: #000;
+    --color-tertiary: #0DBC5C;
     --background-image: #eff2f8;
   }
   
@@ -55,7 +65,7 @@ const { title } = Astro.props
     min-height: 100vh;
     display: grid;
     grid-template-areas: 'header' 'main' 'footer';
-    grid-template-rows: 85px 1fr auto;
+    grid-template-rows: auto 1fr auto;
   }
 
   ::-webkit-scrollbar {
@@ -76,6 +86,9 @@ const { title } = Astro.props
 
   ::-webkit-scrollbar-corner {
     background: var(--background-image);
+  }
+  .sombra {
+    filter: drop-shadow(-2px 0px 5px rgba(0, 0, 0, 0.1));
   }
 </style>
 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/toastify-js'
