@@ -10,10 +10,10 @@ import Jsp from '@/components/icons/Jsp.astro'
 import SqlDeveloper from '@/components/icons/SqlDeveloper.astro'
 import Code from '@/components/icons/Code.astro'
 import User from '@/components/icons/User.astro'
-import ContactIcon from '@/components/icons/Contact.astro'
 import type { Info } from './types'
 import React from '@/components/icons/React.astro'
 import LinkedIn from '@/components/icons/LinkedIn.astro'
+import Kotlin from '@/components/icons/Kotlin.astro'
 
 export const navs = [
   {
@@ -56,6 +56,11 @@ const TAGS = {
     name: 'Next.js',
     class: 'bg-[#24292F] text-white',
     icon: NextJS,
+  },
+  KOTLIN:{
+    name: 'Kotlin',
+    class: 'bg-[#5C2D91] text-white',
+    icon: Kotlin,
   },
   REACT: {
     name: 'React',
@@ -121,28 +126,7 @@ export const proyects: any[] = [
   },
   {
     id: 2,
-    title: 'Cuanti',
-    description:
-      'Cuanti es una plataforma revolucionaria diseñada para agilizar los procesos relacionados con cálculos y pedidos de materiales de construcción. Con una interfaz intuitiva y moderna, Cuanti se destaca en la optimización de la gestión de proyectos de construcción.',
-    resumen:
-      'Plataforma para realizar cálculos y gestionar pedidos de materiales de construcción. ¡Descubre una nueva forma de simplificar tus procesos de construcción!.',
-    image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/uq1rmfwb1hpnnudxdr49',
-    url: 'https://cuanti-uy.vercel.app/',
-    repository: '-',
-    online: true,
-    technologies: [TAGS.NEXT, TAGS.TAILWIND],
-    path: 'cuanti',
-    frontend:
-      'Utiliza Next.js y se ha implementado con el poderoso diseño de Tailwind CSS para ofrecer una experiencia visualmente atractiva y altamente optimizada.',
-    backend:
-      'La plataforma cuenta con una robusta API construida con Node.js y Express, permitiendo la generación eficiente de cálculos y la gestión de usuarios de manera efectiva.',
-    database:
-      'Para el almacenamiento de datos, Cuanti utiliza MongoDB, una base de datos NoSQL que proporciona flexibilidad y rendimiento en la gestión de información.',
-  },
-  {
-    id: 3,
-    title: 'BuildImg',
+    title: 'BuildIMG',
     description:
       'BuildImg es un potente editor de imágenes desarrollado con Next.js y aprovechando la potencia de Cloudinary.',
     resumen:
@@ -157,7 +141,7 @@ export const proyects: any[] = [
   },
   {
     id: 4,
-    title: 'Gestión de usuarios',
+    title: 'Portal académico UTEC - Web',
     description: 'xd',
     resumen:
       'Diseñada para facilitar la administración de usuarios en entornos universitarios. Solicitudes de registro, confirmacion y gestión de usuario.',
@@ -169,6 +153,27 @@ export const proyects: any[] = [
     online: false,
     technologies: [TAGS.JSP, TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
     path: 'gestion-de-usuarios',
+  },
+  {
+    id: 3,
+    title: 'Portal académico UTEC - Aplicación móvil',
+    description:
+      'Cuanti es una plataforma revolucionaria diseñada para agilizar los procesos relacionados con cálculos y pedidos de materiales de construcción. Con una interfaz intuitiva y moderna, Cuanti se destaca en la optimización de la gestión de proyectos de construcción.',
+    resumen:
+      'Plataforma para realizar cálculos y gestionar pedidos de materiales de construcción. ¡Descubre una nueva forma de simplificar tus procesos de construcción!.',
+    image:
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/oaqcmlhxnkal3hq3gy6t',
+    url: '',
+    repository: 'https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023',
+    online: false,
+    technologies: [TAGS.KOTLIN],
+    path: 'cuanti',
+    frontend:
+      'Utiliza Next.js y se ha implementado con el poderoso diseño de Tailwind CSS para ofrecer una experiencia visualmente atractiva y altamente optimizada.',
+    backend:
+      'La plataforma cuenta con una robusta API construida con Node.js y Express, permitiendo la generación eficiente de cálculos y la gestión de usuarios de manera efectiva.',
+    database:
+      'Para el almacenamiento de datos, Cuanti utiliza MongoDB, una base de datos NoSQL que proporciona flexibilidad y rendimiento en la gestión de información.',
   },
   {
     id: 5,
