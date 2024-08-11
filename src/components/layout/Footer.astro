@@ -5,14 +5,14 @@ import { contacts, navs } from '@/lib/index.ts'
 <footer class='relative w-full mx-auto py-14 bg-secondary px-5 md:px-10'>
   <div class='absolute end-10 top-4'>
     <a
-      class='inline-block rounded-full bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 p-2 text-white shadow hover:bg-teal-500 sm:p-3 lg:p-4'
+      class='inline-block rounded-full bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-white shadow hover:bg-teal-500 p-3 lg:p-4'
       href='#inicio'
     >
       <span class='sr-only'>Back to top</span>
 
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        class='h-5 w-5'
+        class='size-6'
         viewBox='0 0 20 20'
         fill='currentColor'
       >
@@ -34,7 +34,7 @@ import { contacts, navs } from '@/lib/index.ts'
               href={url}
               class='cursor-pointer hover:scale-125 transition-all duration-400'
             >
-              <Icon styles='size-8' color={color} />
+              <Icon styles='size-6 md:size-8' color={color} />
             </a>
           )
         })
