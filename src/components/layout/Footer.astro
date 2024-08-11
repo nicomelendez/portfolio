@@ -27,14 +27,14 @@ import { contacts, navs } from '@/lib/index.ts'
   <div class='lg:flex lg:items-end lg:justify-between'>
     <ul class='flex justify-center lg:justify-start gap-x-6 pb-10'>
       {
-        contacts.map(({ icon: Icon, url }) => {
+        contacts.map(({ icon: Icon, url, color }) => {
           return (
             <a
               target='_blank'
               href={url}
               class='cursor-pointer hover:scale-125 transition-all duration-400'
             >
-              <Icon />
+              <Icon styles='size-8' color={color} />
             </a>
           )
         })

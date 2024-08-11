@@ -3,11 +3,12 @@ import ListInfo from "@/components/info/ListInfo.astro";
 import ProfessionalProfile from "@/components/info/ProfessionalProfile.astro";
 import Studies from "@/components/info/Studies.astro";
 import User from "@/components/icons/User.astro";
+import Photo from "../utils/Photo.astro";
 ---
 
 <section
   id="sobre-mi"
-  class="bg-[#E3F7EB] flex flex-col gap-y-4 px-5 md:px-14 pb-14"
+  class="bg-[#E3F7EB] flex flex-col gap-y-4 px-5 md:px-10 pb-14"
 >
   <h2
     class="text-3xl font-bold sm:text-4xl text-[#0DBC5C] text-center py-10 flex items-center justify-center gap-x-2 animacion"
@@ -15,11 +16,18 @@ import User from "@/components/icons/User.astro";
     <User class="w-7 h-7 sm:w-9 sm:h-9" />
     Sobre mí
   </h2>
-  <h3 class="text-xl mt-6 font-bold text-[#0DBC5C] sombra animacion">
-    Perfil Profesional
-  </h3>
-  <ProfessionalProfile />
-  <Studies />
+  <div class="xl:flex xl:items-center xl:gap-x-24 pb-10 xl:pb-14">
+    <div class="flex flex-col gap-y-4 xl:max-w-[1000px]">
+      <h3 class="text-xl mt-6 font-bold text-[#0DBC5C] sombra animacion">
+        Perfil Profesional
+      </h3>
+      <ProfessionalProfile />
+      <Studies />
+    </div>
+    <div class="hidden xl:flex xl:items-center xl:justify-center">
+      <Photo>
+    </div>
+  </div>
   <ListInfo />
 </section>
 
