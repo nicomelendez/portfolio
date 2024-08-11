@@ -1,54 +1,54 @@
 ---
-import LinesIcon from "@/components/icons/LinesIcon.astro";
-import CloseIcon from "@/components/icons/CloseIcon.astro";
-import HomeIcon from "@/components/icons/HomeIcon.astro";
-import { navs } from "@/lib/index.ts";
+import LinesIcon from '@/components/icons/LinesIcon.astro'
+import CloseIcon from '@/components/icons/CloseIcon.astro'
+import HomeIcon from '@/components/icons/HomeIcon.astro'
+import { navs } from '@/lib/index.ts'
 ---
 
 <div
-  class="hamburger sm:hidden z-50 fixed top-4 right-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full shadow-xl p-1"
+  class='hamburger sm:hidden z-50 fixed top-4 right-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full shadow-xl p-1'
 >
-  <button class="p-2 text-white" type="button">
-    <span class="sr-only">Open menu</span>
+  <button class='p-2 text-white' type='button'>
+    <span class='sr-only'>Open menu</span>
     <LinesIcon />
   </button>
 </div>
 
-<div class="nav-links fixed z-50 inset-0 p-10 overflow-y-auto">
-  <div class="flex justify-center px-4">
-    <div class="fixed inset-0 bg-gray-500/70"></div>
+<div class='nav-links fixed z-50 inset-0 p-10 overflow-y-auto'>
+  <div class='flex justify-center px-4'>
+    <div class='fixed inset-0 bg-gray-500/70'></div>
     <div
-      class="rounded-lg shadow-lg relative overflow-hidden w-full mx-auto animate-fade-down animate-duration-500 min-w-[250px]"
+      class='rounded-lg shadow-lg relative overflow-hidden w-full mx-auto animate-fade-down animate-duration-500 min-w-[250px]'
     >
-      <div class="flex w-full flex-col">
+      <div class='flex w-full flex-col'>
         <div
-          class="flex w-full bg-[#0DBC5C] text-white items-center py-5 justify-between px-4"
+          class='flex w-full bg-[#0DBC5C] text-white items-center py-5 justify-between px-4'
         >
-          <h2 class="text-2xl font-bold text-center">Menú</h2>
+          <h2 class='text-2xl font-bold text-center'>Menú</h2>
 
-          <div class="close font-bold cursor-pointer">
-            <span class="sr-only">Close menu</span>
+          <div class='close font-bold cursor-pointer'>
+            <span class='sr-only'>Close menu</span>
             <CloseIcon />
           </div>
         </div>
         <ul
-          class="w-full font-medium text-lg py-5 gap-2 px-4 flex flex-col space-y-5 bg-white"
+          class='w-full font-medium text-lg py-5 gap-2 px-4 flex flex-col space-y-5 bg-white'
         >
-          <a class="w-full flex items-center justify-between" href="/#inicio">
+          <a class='w-full flex items-center justify-between' href='/#inicio'>
             Inicio
-            <HomeIcon class="h-7 w-7" />
+            <HomeIcon class='h-7 w-7' />
           </a>
           {
             navs.map((item) => {
               return (
                 <a
-                  class="w-full flex items-center justify-between"
+                  class='w-full flex items-center justify-between'
                   href={`${item.url}`}
                 >
                   {item.text}
-                  <item.icon class="w-h-7 w-7" />
+                  <item.icon class='w-h-7 w-7' />
                 </a>
-              );
+              )
             })
           }
         </ul>
@@ -73,11 +73,13 @@ import { navs } from "@/lib/index.ts";
   }
 </style>
 <script>
+  import { $, $$ } from '@/lib/dom-selector'
+
   document.addEventListener('astro:page-load', () => {
-    const hamburger = document.querySelector('.hamburger')
-    const navLinks = document.querySelector('.nav-links')
-    const closeBtn = document.querySelector('.close')
-    const navItems = document.querySelectorAll('ul a')
+    const hamburger = $('.hamburger')
+    const navLinks = $('.nav-links')
+    const closeBtn = $('.close')
+    const navItems = $$('ul a')
 
     hamburger?.addEventListener('click', () => {
       navLinks?.classList.toggle('expanded')
