@@ -1,5 +1,4 @@
 import GitHub from '@/components/icons/GitHub.astro'
-import LinkedinIcon from '@/components/icons/LinkedIn.astro'
 import NextJS from '@/components/icons/NextJS.astro'
 import Tailwind from '@/components/icons/Tailwind.astro'
 import Astro from '@/components/icons/Astro.astro'
@@ -12,6 +11,9 @@ import SqlDeveloper from '@/components/icons/SqlDeveloper.astro'
 import Code from '@/components/icons/Code.astro'
 import User from '@/components/icons/User.astro'
 import ContactIcon from '@/components/icons/Contact.astro'
+import type { Info } from './types'
+import React from '@/components/icons/React.astro'
+import LinkedIn from '@/components/icons/LinkedIn.astro'
 
 export const navs = [
   {
@@ -39,11 +41,13 @@ export const contacts: any[] = [
     id: 1,
     icon: GitHub,
     url: 'https://github.com/nicomelendez',
+    color:"#24292E"
   },
   {
     id: 2,
-    icon: LinkedinIcon,
+    icon: LinkedIn,
     url: 'https://www.linkedin.com/in/nicolas-melendez/',
+    color:"#0077B5"
   },
 ]
 export function getInfo(path: string) {
@@ -56,8 +60,13 @@ export function getProyect(path: string) {
 const TAGS = {
   NEXT: {
     name: 'Next.js',
-    class: 'bg-[#3D3B40] text-white',
+    class: 'bg-[#24292F] text-white',
     icon: NextJS,
+  },
+  REACT: {
+    name: 'React',
+    class: 'bg-[#007ACC] text-white',
+    icon: React,
   },
   TAILWIND: {
     name: 'Tailwind CSS',
@@ -104,6 +113,20 @@ const TAGS = {
 export const proyects: any[] = [
   {
     id: 1,
+    title: 'Doc AI',
+    description: 'Proporciona la información sobre un tema y obtén un documento Word para seguir editando.',
+    resumen:
+      ' Este proyecto, inspirado en el trabajo de MiduDev, proporciona un ejemplo guiado para entender y experimentar con las capacidades de View Transitions API.',
+    image:
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/bs69jq9lagwbkakldqof',
+    url: 'https://doc-ai-free.vercel.app/',
+    repository: 'https://github.com/nicomelendez/doc-ai',
+    online: true,
+    technologies: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND,],
+    path: 'doc-ai',
+  },
+  {
+    id: 2,
     title: 'Cuanti',
     description:
       'Cuanti es una plataforma revolucionaria diseñada para agilizar los procesos relacionados con cálculos y pedidos de materiales de construcción. Con una interfaz intuitiva y moderna, Cuanti se destaca en la optimización de la gestión de proyectos de construcción.',
@@ -124,7 +147,7 @@ export const proyects: any[] = [
       'Para el almacenamiento de datos, Cuanti utiliza MongoDB, una base de datos NoSQL que proporciona flexibilidad y rendimiento en la gestión de información.',
   },
   {
-    id: 2,
+    id: 3,
     title: 'BuildImg',
     description:
       'BuildImg es un potente editor de imágenes desarrollado con Next.js y aprovechando la potencia de Cloudinary.',
@@ -139,7 +162,7 @@ export const proyects: any[] = [
     path: 'buildimg',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Gestión de usuarios',
     description: 'xd',
     resumen:
@@ -154,7 +177,7 @@ export const proyects: any[] = [
     path: 'gestion-de-usuarios',
   },
   {
-    id: 4,
+    id: 5,
     title: 'MyBooks',
     description:
       'Aplicación con Nextjs y Tawlind, para la gestión de los libros que estas leyendo y controlar su estado.',
@@ -169,7 +192,7 @@ export const proyects: any[] = [
     path: 'mybooks',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Gestión de constancias UTEC',
     description:
       'Aplicación con windowsBuilder y Java, aplicación de windows con gestión de usuarios, constancias, eventos y generador de pdf.',
@@ -184,25 +207,28 @@ export const proyects: any[] = [
     technologies: [TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
     path: 'gestion-de-constancias-utec',
   },
-  {
-    id: 6,
-    title: 'Books',
-    description: 'Aplicación con Astro para probar View Transitions API.',
-    resumen:
-      ' Este proyecto, inspirado en el trabajo de MiduDev, proporciona un ejemplo guiado para entender y experimentar con las capacidades de View Transitions API.',
-    image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/qkcisq6hz1elzyeo9f2m',
-    url: '',
-    repository: 'https://github.com/nicomelendez/books',
-    online: true,
-    technologies: [TAGS.ASTRO, TAGS.TAILWIND],
-    path: 'books',
-  },
 ]
 
-export const informations: any[] = [
+export const informations: Info[] = [
   {
     id: 1,
+    titulo: 'Proyecto Final de Tecnicatura',
+    resumen:
+      'Diseño e implementación de infraestructura interconectando sedes universitarias a través de ISP, configuraciones como VLAN, ChannelGroup, Accesslist, etc. Junto a una aplicación de gestión de usuarios con JSP y JavaEE.',
+    fecha: '2024',
+    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/pyj9iz5z2u9sraln86u1',
+    descripcion:
+      'Para este proyecto del tercer semestre, nos enfrentamos a un desafío doble: primero, diseñar y configurar la infraestructura de red de la Universidad Tecnológica y sus sedes utilizando herramientas como GNS3 para simular y planificar la conectividad. Esta etapa implicó abordar problemas como la distancia entre las sedes, la variedad de dispositivos y usuarios, y la necesidad de escalabilidad y eficiencia. Luego, nos sumergimos en la creación de una aplicación de gestión de usuarios, utilizando tecnologías como Server Pages, JavaEE y Oracle SQL Developer. Esta fase del proyecto nos permitió integrar las habilidades aprendidas en desarrollo y arquitectura de software, culminando en una solución integral que mejora la infraestructura y la gestión de la Universidad.',
+    path: 'proyecto-final-tecnicatura',
+    drive:
+      'https://drive.google.com/drive/folders/1Rc8eOX2XjpnrqmaQE2r1YUlIrAye1EnV?usp=sharing',
+    github:
+      'https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023',
+    aprendisaje:
+      'Durante el transcurso del tercer semestre y la ejecución del proyecto final, adquirí conocimientos en los fundamentos de infraestructura, incluyendo la conectividad de dispositivos y sus comunicaciones, así como la implementación de conceptos clave como el protocolo OSPF, access-lists, VLANs, channel groups y DHCP. Además, exploré tecnologías como JSP, Oracle y JWT, lo que amplió mi comprensión en el desarrollo de aplicaciones web y la gestión de bases de datos, brindándome una base para enfrentar desafíos futuros.',
+  },
+  {
+    id: 2,
     titulo: 'Proyecto Infraestructura 3er semestre',
     resumen:
       'Diseño e implementación de infraestructura interconectando sedes universitarias a través de ISP, configuraciones como VLAN, ChannelGroup, Accesslist, etc. Junto a una aplicación de gestión de usuarios con JSP y JavaEE.',
@@ -219,7 +245,7 @@ export const informations: any[] = [
       'Durante el transcurso del tercer semestre y la ejecución del proyecto final, adquirí conocimientos en los fundamentos de infraestructura, incluyendo la conectividad de dispositivos y sus comunicaciones, así como la implementación de conceptos clave como el protocolo OSPF, access-lists, VLANs, channel groups y DHCP. Además, exploré tecnologías como JSP, Oracle y JWT, lo que amplió mi comprensión en el desarrollo de aplicaciones web y la gestión de bases de datos, brindándome una base para enfrentar desafíos futuros.',
   },
   {
-    id: 2,
+    id: 3,
     titulo: 'Proyecto PDT 2do semestre',
     fecha: '2023',
     resumen:
@@ -236,7 +262,7 @@ export const informations: any[] = [
       'Durante el segundo semestre, este proyecto me brindó experiencia en los fundamentos de programación, base de datos y testing. Las materias cursadas junto con el desarrollo del proyecto me permitieron comprender y vivir todo el ciclo de desarrollo de una aplicación. Desde la generación de casos de uso hasta la creación de casos de prueba, abordamos todos los aspectos necesarios para desarrollar una aplicación completa. Diseñamos la base de datos, desarrollamos tanto el cliente como el servidor, y realizamos pruebas que fueron registradas en TestLink y reportadas en Mantis. Esta experiencia práctica consolidó mi comprensión de los principios fundamentales y me preparó para futuros desafíos.',
   },
   {
-    id: 3,
+    id: 4,
     fecha: '2023',
     img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/zkimsh5iyyvdr28y95so',
     resumen:
@@ -253,7 +279,7 @@ export const informations: any[] = [
       'Durante la emocionante semana del hackathon, adquirí una valiosa experiencia que abarcó desde la comprensión de los servicios de Cloudinary hasta la implementación práctica de una aplicación web funcional. Aprendí a utilizar de manera efectiva las herramientas de Cloudinary para manipular imágenes en mi aplicación, lo que amplió significativamente mi conocimiento en el desarrollo web. Además, el desafío de diseñar un estado global y un hook personalizado para integrar los servicios y estados de la aplicación me permitió fortalecer mis habilidades en la creación de soluciones eficientes y escalables. Esta experiencia me enseñó la importancia de la creatividad, la adaptabilidad y el trabajo bajo presión en el desarrollo de software.',
   },
   {
-    id: 4,
+    id: 5,
     titulo: 'Reto Hornex - Impulsa Industria (CIU)',
     fecha: '2022',
     resumen:
@@ -268,7 +294,7 @@ export const informations: any[] = [
       'Durante mi participación, adquirí experiencia en el desarrollo de habilidades blandas, especialmente en la comunicación efectiva y la negociación al tratar directamente con el cliente. Presentar y defender nuestras propuestas ante el dueño de la empresa requirió habilidades de comunicación claras. Además, el proceso de colaboración y trabajo en equipo me permitió mejorar mis habilidades de liderazgo, tolerancia a la frustración y capacidad para negociar. Esta experiencia no solo me brindó una perspectiva práctica sobre cómo trabajar con clientes en entornos profesionales, sino que también fortaleció mi confianza y habilidades interpersonales, preparándome mejor para futuras colaboraciones y desafíos en el mundo laboral.',
   },
   {
-    id: 5,
+    id: 6,
     titulo: 'NASA Space Apps Challenge',
     resumen:
       'Participé en el concurso NASA Space Apps Challenge, donde ganamos con un gurpo de amigos a nivel nacional clasificando a la fase global.',
