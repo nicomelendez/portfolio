@@ -28,12 +28,6 @@ export const navs = [
     url: '/#sobre-mi',
     icon: User,
   },
-  {
-    id: 3,
-    text: 'Contacto',
-    url: '/#contacto',
-    icon: ContactIcon,
-  },
 ]
 
 export const contacts: any[] = [
