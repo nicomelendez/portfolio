@@ -10,7 +10,7 @@ import Jsp from '@/components/icons/Jsp.astro'
 import SqlDeveloper from '@/components/icons/SqlDeveloper.astro'
 import Code from '@/components/icons/Code.astro'
 import User from '@/components/icons/User.astro'
-import type { Info } from './types'
+import type { Info, Proyect } from './types'
 import React from '@/components/icons/React.astro'
 import LinkedIn from '@/components/icons/LinkedIn.astro'
 import Kotlin from '@/components/icons/Kotlin.astro'
@@ -35,20 +35,17 @@ export const contacts: any[] = [
     id: 1,
     icon: GitHub,
     url: 'https://github.com/nicomelendez',
-    color:"#24292E"
+    color: '#24292E',
   },
   {
     id: 2,
     icon: LinkedIn,
     url: 'https://www.linkedin.com/in/nicolas-melendez/',
-    color:"#0077B5"
+    color: '#0077B5',
   },
 ]
 export function getInfo(path: string) {
   return informations.find((info) => info.path === path)
-}
-export function getProyect(path: string) {
-  return proyects.find((project) => project.path === path)
 }
 
 const TAGS = {
@@ -57,7 +54,7 @@ const TAGS = {
     class: 'bg-[#24292F] text-white',
     icon: NextJS,
   },
-  KOTLIN:{
+  KOTLIN: {
     name: 'Kotlin',
     class: 'bg-[#5C2D91] text-white',
     icon: Kotlin,
@@ -109,20 +106,20 @@ const TAGS = {
   },
 }
 
-export const proyects: any[] = [
+export const proyects: Proyect[] = [
   {
     id: 1,
     title: 'Doc AI',
-    description: 'Proporciona la información sobre un tema y obtén un documento Word para seguir editando.',
+    description:
+      'Proporciona la información sobre un tema y obtén un documento Word para seguir editando.',
     resumen:
-      ' Este proyecto, inspirado en el trabajo de MiduDev, proporciona un ejemplo guiado para entender y experimentar con las capacidades de View Transitions API.',
+      'Analiza un contexto específico, hace preguntas para refinarlo, mejora el contexto con las respuestas. Luego, busca información y genera una plantilla en Word para tareas universitarias o de secundaria.',
     image:
       'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/bs69jq9lagwbkakldqof',
     url: 'https://doc-ai-free.vercel.app/',
     repository: 'https://github.com/nicomelendez/doc-ai',
     online: true,
-    technologies: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND,],
-    path: 'doc-ai',
+    technologies: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
   },
   {
     id: 2,
@@ -137,43 +134,35 @@ export const proyects: any[] = [
     repository: 'https://github.com/nicomelendez/image-app',
     online: true,
     technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.CLOUDINARY],
-    path: 'buildimg',
   },
   {
     id: 4,
     title: 'Portal académico UTEC - Web',
-    description: 'xd',
+    description:
+      'Portal académico para UTEC que facilita la gestión de diversas actividades y registros.',
     resumen:
-      'Diseñada para facilitar la administración de usuarios en entornos universitarios. Solicitudes de registro, confirmacion y gestión de usuario.',
+      'Portal académico que facilita la gestión de usuarios, eventos, constancias, reclamos y ITRs.',
     image:
       'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/jxrpfmgbyuv3jcbsvxvf',
     url: '',
-    repository:
-      'https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023',
+    repository: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     online: false,
     technologies: [TAGS.JSP, TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
-    path: 'gestion-de-usuarios',
   },
   {
     id: 3,
     title: 'Portal académico UTEC - Aplicación móvil',
     description:
-      'Cuanti es una plataforma revolucionaria diseñada para agilizar los procesos relacionados con cálculos y pedidos de materiales de construcción. Con una interfaz intuitiva y moderna, Cuanti se destaca en la optimización de la gestión de proyectos de construcción.',
+      'Aplicación móvil en Kotlin para gestionar reclamos en la UTEC.',
     resumen:
-      'Plataforma para realizar cálculos y gestionar pedidos de materiales de construcción. ¡Descubre una nueva forma de simplificar tus procesos de construcción!.',
+      'Solicitud, modificación, listado y eliminado de reclamos del portal académico, diseñada para dispositivos móviles.',
     image:
       'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/oaqcmlhxnkal3hq3gy6t',
     url: '',
-    repository: 'https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023',
+    repository:
+      'https://github.com/nicomelendez/proyecto-de-tecnicatura-app-movil',
     online: false,
     technologies: [TAGS.KOTLIN],
-    path: 'cuanti',
-    frontend:
-      'Utiliza Next.js y se ha implementado con el poderoso diseño de Tailwind CSS para ofrecer una experiencia visualmente atractiva y altamente optimizada.',
-    backend:
-      'La plataforma cuenta con una robusta API construida con Node.js y Express, permitiendo la generación eficiente de cálculos y la gestión de usuarios de manera efectiva.',
-    database:
-      'Para el almacenamiento de datos, Cuanti utiliza MongoDB, una base de datos NoSQL que proporciona flexibilidad y rendimiento en la gestión de información.',
   },
   {
     id: 5,
@@ -188,7 +177,6 @@ export const proyects: any[] = [
     repository: 'https://github.com/nicomelendez/mybooks',
     online: true,
     technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
-    path: 'mybooks',
   },
   {
     id: 6,
@@ -204,7 +192,6 @@ export const proyects: any[] = [
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
     online: false,
     technologies: [TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
-    path: 'gestion-de-constancias-utec',
   },
 ]
 
@@ -213,18 +200,17 @@ export const informations: Info[] = [
     id: 1,
     titulo: 'Proyecto Final de Tecnicatura',
     resumen:
-      'Diseño e implementación de infraestructura interconectando sedes universitarias a través de ISP, configuraciones como VLAN, ChannelGroup, Accesslist, etc. Junto a una aplicación de gestión de usuarios con JSP y JavaEE.',
+      'Desarrollo e implementación de un producto completo que incluye una aplicación web y móvil, bases de datos operativa y corporativa, infraestructura de red simulada en GNS3, y un proceso de testing con herramientas como TestLink y Mantis.',
     fecha: '2024',
     img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/pyj9iz5z2u9sraln86u1',
     descripcion:
-      'Para este proyecto del tercer semestre, nos enfrentamos a un desafío doble: primero, diseñar y configurar la infraestructura de red de la Universidad Tecnológica y sus sedes utilizando herramientas como GNS3 para simular y planificar la conectividad. Esta etapa implicó abordar problemas como la distancia entre las sedes, la variedad de dispositivos y usuarios, y la necesidad de escalabilidad y eficiencia. Luego, nos sumergimos en la creación de una aplicación de gestión de usuarios, utilizando tecnologías como Server Pages, JavaEE y Oracle SQL Developer. Esta fase del proyecto nos permitió integrar las habilidades aprendidas en desarrollo y arquitectura de software, culminando en una solución integral que mejora la infraestructura y la gestión de la Universidad.',
+      'Este proyecto final abarcó el desarrollo de una aplicación web cliente/servidor donde la API y el cliente se ejecutaban en el mismo proyecto. La aplicación móvil, desarrollada en Kotlin, consumía la API de la aplicación web. La base de datos operativa fue creada con SQL Developer, y Power BI se utilizó para visualizar los datos en la base de datos corporativa. La infraestructura de red se simuló en GNS3, configurando una topología que interconectaba dos sedes universitarias mediante VPN y utilizando dos firewalls pfSense para establecer una DMZ en la sede central. El proceso de testing incluyó seis ciclos de pruebas, gestionando casos de prueba con TestLink y registrando incidentes en Mantis para su resolución.',
     path: 'proyecto-final-tecnicatura',
     drive:
-      'https://drive.google.com/drive/folders/1Rc8eOX2XjpnrqmaQE2r1YUlIrAye1EnV?usp=sharing',
-    github:
-      'https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023',
+      'https://drive.google.com/drive/folders/18grqw21lrKuiBuwMdkm-QE58iZqdOOvw?usp=sharing',
+    github: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     aprendisaje:
-      'Durante el transcurso del tercer semestre y la ejecución del proyecto final, adquirí conocimientos en los fundamentos de infraestructura, incluyendo la conectividad de dispositivos y sus comunicaciones, así como la implementación de conceptos clave como el protocolo OSPF, access-lists, VLANs, channel groups y DHCP. Además, exploré tecnologías como JSP, Oracle y JWT, lo que amplió mi comprensión en el desarrollo de aplicaciones web y la gestión de bases de datos, brindándome una base para enfrentar desafíos futuros.',
+      'A lo largo del desarrollo del proyecto final, adquirí habilidades en el diseño y configuración de infraestructuras de red, la implementación de aplicaciones cliente/servidor con tecnologías como JSP y JavaEE, y la integración de bases de datos con SQL Developer y Power BI. Además, me familiaricé con el ciclo completo de pruebas de software, desde la creación de casos de prueba hasta la gestión de incidencias con herramientas como TestLink y Mantis, lo que me proporcionó una visión integral del desarrollo y la implementación de soluciones tecnológicas completas.',
   },
   {
     id: 2,
@@ -238,8 +224,6 @@ export const informations: Info[] = [
     path: 'proyecto-final-3er-semestre',
     drive:
       'https://drive.google.com/drive/folders/1Rc8eOX2XjpnrqmaQE2r1YUlIrAye1EnV?usp=sharing',
-    github:
-      'https://git.utec.edu.uy/valentina.hernandez/pinfra-error404-minas-2023',
     aprendisaje:
       'Durante el transcurso del tercer semestre y la ejecución del proyecto final, adquirí conocimientos en los fundamentos de infraestructura, incluyendo la conectividad de dispositivos y sus comunicaciones, así como la implementación de conceptos clave como el protocolo OSPF, access-lists, VLANs, channel groups y DHCP. Además, exploré tecnologías como JSP, Oracle y JWT, lo que amplió mi comprensión en el desarrollo de aplicaciones web y la gestión de bases de datos, brindándome una base para enfrentar desafíos futuros.',
   },
@@ -251,7 +235,7 @@ export const informations: Info[] = [
       'Desarrollo de una aplicación para gestionar constancias, creada con Java, SQL developer y WindowsBuilder. Este proyecto abarcaba lo que aprendimos en Programación, Base de datos y Testing.',
     img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/oztuemf3tdc3he2r1nn2',
     drive:
-      'https://drive.google.com/drive/folders/1GYNmdPLqm-lzOqLl-VZO5xdQ3CK-V3rc?usp=sharing',
+      'https://drive.google.com/drive/folders/1jqW27LXdKABWZsFdA1xakiG4HJx-1Dlp?usp=sharing',
     github:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
     descripcion:
