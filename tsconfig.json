@@ -22,7 +22,5 @@
         "src/components/utils/*"
       ],
     },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
   }
 }
