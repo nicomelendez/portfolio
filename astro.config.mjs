@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
 import { VitePWA } from "vite-plugin-pwa"
 import vercel from "@astrojs/vercel/serverless";
 
@@ -10,7 +9,7 @@ export default defineConfig({
   devToolbar: {
 		enabled: false,
 	},
-  integrations: [tailwind(), react()],
+  integrations: [tailwind()],
   output: "server",
   adapter: vercel(),
   vite: {
