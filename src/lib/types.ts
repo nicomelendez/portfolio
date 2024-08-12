@@ -14,10 +14,6 @@ export interface Proyect {
   repository: string;
   online: boolean;
   technologies: any;
-  path: string;
-  frontend?: string;
-  backend?: string;
-  database?: string;
 }
 
 export interface Technology {
