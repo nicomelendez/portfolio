@@ -1,7 +1,7 @@
 ---
 import ButtonsProyects from "./ButtonsProyects.astro";
 import TechnologiesProyect from "./TechnologiesProyect.astro";
-const { title, image, url, repository, online, resumen, technologies, path } =
+const { title, image, url, repository, online, resumen, technologies } =
   Astro.props;
 ---
 
@@ -27,7 +27,6 @@ const { title, image, url, repository, online, resumen, technologies, path } =
       online={online}
       repository={repository}
       url={url}
-      path={path}
       view={true}
     />
   </div>
