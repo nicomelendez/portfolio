@@ -286,7 +286,7 @@ export const informations: Info[] = [
     img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/e0ohbru0kexku9phwobb',
     drive: 'https://photos.app.goo.gl/qH8uRyVM8Hx7DNTz6',
     descripcion:
-      "Durante tres días, trabaje junto a cuatro amigos en la creación de una demo de un juego educativo para el desafío 'Space Quest: The Game' del NASA Space Apps Challenge. Abordamos temas del espacio, diseñando una idea de juego interactivo que enseñara a los jugadores sobre el espacio. Esta experiencia nos permitió no solo fortalecer nuestras habilidades blandas al colaborar en equipo y defender una idea.",
+      "Durante tres días, trabaje junto a cuatro amigos en la creación de una demo de un juego educativo para el desafío 'Space Quest: The Game' del NASA Space Apps Challenge. Abordamos temas del espacio, diseñando una idea de juego interactivo que enseñara a los jugadores sobre el espacio. Esta experiencia nos permitió fortalecer nuestras habilidades blandas al colaborar en equipo y defender una idea.",
     path: 'hackathon-nasa-space-challenge',
     aprendisaje:
       'Participar en el desafío de la NASA Space Apps Challenge fue una oportunidad única para desarrollar habilidades blandas clave. Trabajar en equipo me enseñó la importancia de la comunicación efectiva, la colaboración y la capacidad de defender nuestras ideas. Aprendimos a escuchar, a comprometernos con las opiniones de los demás y a resolver conflictos de manera constructiva.',
