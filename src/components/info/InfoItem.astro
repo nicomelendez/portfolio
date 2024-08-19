@@ -1,38 +1,47 @@
 ---
-import InfoIcon from "@/components/icons/InfoIcon.astro";
+import InfoIcon from '@/components/icons/InfoIcon.astro'
 
-const { img, fecha, titulo, resumen, path } = Astro.props;
+const { img, fecha, titulo, resumen, path, tags } = Astro.props
 ---
 
 <article
-  class="flex flex-col mx-auto max-w-[700px] lg:max-w-[500px] justify-between gap-y-6 bg-white rounded-lg sombra animacion hover:shadow-lg transition-all duration-500"
+  class='flex flex-col mx-auto justify-between gap-y-6 bg-white rounded-lg sombra animacion hover:shadow-lg transition-all duration-500'
 >
-  <div class="flex flex-col gap-y-6">
-    <picture class="flex flex-col">
+  <div class='flex flex-col gap-y-6'>
+    <picture class='flex flex-col'>
       <img
-        loading="lazy"
+        loading='lazy'
         src={`${img}`}
-        class="object-cover aspect-video lg:aspect-auto lg:h-[240px] rounded-t-lg sombra"
+        class='object-cover aspect-video lg:aspect-auto md:h-[240px] lg:h-[260px] xl:h-[280px] rounded-t-lg'
         alt={`Imagen de ${titulo}`}
       />
     </picture>
 
-    <div class="flex flex-col gap-y-4 px-5 justify-between">
-      <div class="flex flex-col gap-y-4 min-h-[170px]">
-        <span
-          class="rounded-full text-xs w-[50px] bg-emerald-100 text-emerald-700 flex justify-center items-center px-2 py-1 shadow-lg"
-        >
-          {fecha}
-        </span>
-        <h3 class="font-bold text-gray-900">{titulo}</h3>
+    <div class='flex flex-col gap-y-4 px-5 justify-between'>
+      <div class='flex flex-col gap-y-4 min-h-[230px]'>
+        <ul class='flex flex-wrap gap-2 flex-row items-center'>
+          {
+            tags.map((tag: any) => (
+              <li>
+                <span
+                  class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1.5 px-3 border border-white/10 shadow-md`}
+                >
+                  <tag.icon class='w-4 h-4' />
+                  {tag.name}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+        <h3 class='font-bold text-gray-900'>{titulo}</h3>
 
-        <p class="text-xs md:text-sm text-pretty">{resumen}</p>
+        <p class='text-xs md:text-sm text-pretty'>{resumen}</p>
       </div>
 
-      <div class="flex items-center justify-end">
+      <div class='flex items-center justify-end'>
         <a
           href={`/info/${path}`}
-          class="flex items-center gap-x-2 font-medium rounded-full bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md"
+          class='flex items-center gap-x-2 font-medium rounded-full bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md'
         >
           <InfoIcon />
           Saber más
@@ -41,6 +50,11 @@ const { img, fecha, titulo, resumen, path } = Astro.props;
     </div>
   </div>
 
-  <span class="h-2 bg-gradient-to-r from-green-300 to-emerald-500 rounded-b-lg"
+  <span class='h-2 bg-gradient-to-r from-green-300 to-emerald-500 rounded-b-lg'
   ></span>
 </article>
+<!-- <span
+class='rounded-full text-xs w-[50px] bg-emerald-100 text-emerald-700 flex justify-center items-center px-2 py-1 shadow-lg'
+>
+{fecha}
+</span> -->

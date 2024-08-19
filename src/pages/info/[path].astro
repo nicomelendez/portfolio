@@ -26,9 +26,11 @@ const { titulo, img, link, github, drive, descripcion, aprendisaje } = info
 <Layout title={`${titulo} - Nicolás Meléndez`}>
   <BtnAtras />
   <section
-    class='bg-[#E3F7EB] flex flex-col items-start pb-12 md:pb-0 gap-y-10 xl:flex-row gap-x-10 pt-5 px-5 md:px-14'
+    class='bg-[#E3F7EB] flex flex-col items-start pb-12 md:pb-0 gap-y-10 xlbig:flex-row justify-center gap-x-10 pt-5 px-5 md:px-14'
   >
-    <div class='space-y-4 xl:max-w-[750px]'>
+    <div
+      class='space-y-4 w-full xlbig:max-w-[600px] xlmax:max-w-[700px]'
+    >
       <h2
         class='text-center lg:text-left text-3xl xl:text-4xl font-bold text-[#0DBC5C] text-balance'
       >
@@ -57,7 +59,7 @@ const { titulo, img, link, github, drive, descripcion, aprendisaje } = info
     <div class='flex flex-col gap-y-8'>
       <picture class='rounded-lg'>
         <img
-          class='md:max-w-[700px] xl:max-w-[600px] aspect-video object-cover rounded-lg shadow-lg'
+          class='w-full xlbig:max-w-[500px] xlmax:max-w-[700px] object-cover rounded-lg shadow-lg'
           src={img}
           alt={`Imagen de ${titulo}`}
         />
@@ -65,9 +67,9 @@ const { titulo, img, link, github, drive, descripcion, aprendisaje } = info
     </div>
   </section>
   <WaveUp />
-  <section class='flex flex-col gap-y-4 pt-10 pb-20 px-5 md:px-14 bg-white'>
+  <section class='flex flex-col items-center gap-y-4 pt-10 pb-20 px-5 md:px-14 bg-white'>
     <div class='space-y-8'>
-      <h3 class='text-2xl font-bold text-[#0DBC5C]'>
+      <h3 class='text-2xl font-bold text-center text-[#0DBC5C]'>
         <span class='pr-2 text-[#45745a] text-balance'>#</span>¿Qué aprendi?
       </h3>
       <p class='text-sm sm:text-base max-w-[1200px]'>
