@@ -37,8 +37,8 @@ export const navs = [
   },
   {
     id: 3,
-    text: 'Reconocimientos y logros',
-    url: '/#reconocimientos-y-logros',
+    text: 'Logros',
+    url: '/#logros',
     icon: Medal,
   },
 ]
