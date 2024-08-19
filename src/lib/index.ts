@@ -191,7 +191,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Portal académico que facilita la gestión de usuarios, eventos, constancias, reclamos y ITRs.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/jxrpfmgbyuv3jcbsvxvf',
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/lsbk9coc7mfic4sfejeh',
     url: '',
     repository: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     online: false,
