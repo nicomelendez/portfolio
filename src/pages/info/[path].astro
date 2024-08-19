@@ -28,9 +28,7 @@ const { titulo, img, link, github, drive, descripcion, aprendisaje } = info
   <section
     class='bg-[#E3F7EB] flex flex-col items-start pb-12 md:pb-0 gap-y-10 xlbig:flex-row justify-center gap-x-10 pt-5 px-5 md:px-14'
   >
-    <div
-      class='space-y-4 w-full xlbig:max-w-[600px] xlmax:max-w-[700px]'
-    >
+    <div class='space-y-4 w-full xlbig:max-w-[600px] xlmax:max-w-[700px]'>
       <h2
         class='text-center lg:text-left text-3xl xl:text-4xl font-bold text-[#0DBC5C] text-balance'
       >
@@ -44,15 +42,19 @@ const { titulo, img, link, github, drive, descripcion, aprendisaje } = info
       >
         {link && <BtnVisitar url={link} />}
         {github && <BtnGithub repository={github} />}
-        <a
-          target='_blank'
-          rel='noopener noreferrer'
-          href={drive}
-          class='flex items-center gap-x-2 text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-full text-xs py-2 px-3 shadow-md text-center'
-        >
-          <DriveIcon />
-          Recursos
-        </a>
+        {
+          drive && (
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href={drive}
+              class='flex items-center gap-x-2 text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-full text-xs py-2 px-3 shadow-md text-center'
+            >
+              <DriveIcon />
+              Recursos
+            </a>
+          )
+        }
       </div>
     </div>
 
@@ -67,7 +69,9 @@ const { titulo, img, link, github, drive, descripcion, aprendisaje } = info
     </div>
   </section>
   <WaveUp />
-  <section class='flex flex-col items-center gap-y-4 pt-10 pb-20 px-5 md:px-14 bg-white'>
+  <section
+    class='flex flex-col items-center gap-y-4 pt-10 pb-20 px-5 md:px-14 bg-white'
+  >
     <div class='space-y-8'>
       <h3 class='text-2xl font-bold text-center text-[#0DBC5C]'>
         <span class='pr-2 text-[#45745a] text-balance'>#</span>¿Qué aprendi?

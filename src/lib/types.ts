@@ -45,7 +45,7 @@ export interface Info {
   img: string
   descripcion: string
   path: string
-  drive: string
+  drive?: string
   link?: string
   github?: string
   aprendisaje: string
