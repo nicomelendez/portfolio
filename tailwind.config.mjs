@@ -13,7 +13,8 @@ export default {
       },
       screens: {
         xs: '360px',
-        xlmax: '1400px',
+        xlbig: '1300px',
+        xlmax: '1500px',
         ...defaultTheme.screens,
       },
     },
