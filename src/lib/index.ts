@@ -14,6 +14,13 @@ import type { Info, Proyect } from './types'
 import React from '@/components/icons/React.astro'
 import LinkedIn from '@/components/icons/LinkedIn.astro'
 import Kotlin from '@/components/icons/Kotlin.astro'
+import Medal from '@/components/icons/Medal.astro'
+import Network from '@/components/icons/Network.astro'
+import Database from '@/components/icons/Database.astro'
+import Programmer from '@/components/icons/Programmer.astro'
+import Bug from '@/components/icons/Bug.astro'
+import Talk from '@/components/icons/Talk.astro'
+import Teamwork from '@/components/icons/Teamwork.astro'
 
 export const navs = [
   {
@@ -27,6 +34,12 @@ export const navs = [
     text: 'Sobre mí',
     url: '/#sobre-mi',
     icon: User,
+  },
+  {
+    id: 3,
+    text: 'Reconocimientos y logros',
+    url: '/#reconocimientos-y-logros',
+    icon: Medal,
   },
 ]
 
@@ -104,6 +117,41 @@ const TAGS = {
     class: 'bg-[#1e184b]/70 text-white',
     icon: Jsp,
   },
+  HACKATHON: {
+    name: 'Hackathon',
+    class: 'bg-[#DAA520]/70 text-white',
+    icon: Medal,
+  },
+  INFRASTRUCTURE: {
+    name: 'Infraestructura',
+    class: 'bg-[#2E8B57]/70 text-white',
+    icon: Network,
+  },
+  DATABASE: {
+    name: 'Base de Datos',
+    class: 'bg-[#4682B4]/70 text-white',
+    icon: Database,
+  },
+  PROGRAMMING: {
+    name: 'Programación',
+    class: 'bg-[#8B0000]/70 text-white',
+    icon: Programmer,
+  },
+  TESTING: {
+    name: 'Testing',
+    class: 'bg-[#4B0082]/70 text-white',
+    icon: Bug,
+  },
+  COMMUNICATION: {
+    name: 'Comunicación',
+    class: 'bg-[#4B8B3B]/70 text-white',
+    icon: Talk,
+  },
+  TEAMWORK: {
+    name: 'Trabajo en Equipo',
+    class: 'bg-[#1e90ff]/70 text-white',
+    icon: Teamwork,
+  },
 }
 
 export const proyects: Proyect[] = [
@@ -115,7 +163,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Analiza un contexto específico, hace preguntas para refinarlo, mejora el contexto con las respuestas. Luego, busca información y genera una plantilla en Word para tareas universitarias o de secundaria.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/bs69jq9lagwbkakldqof',
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/cuvkttpv68s7x2byvovk',
     url: 'https://doc-ai-free.vercel.app/',
     repository: 'https://github.com/nicomelendez/doc-ai',
     online: true,
@@ -129,7 +177,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con BuildImg ahora mismo!.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/c1zqdhmwhj78vxjlotxy',
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/wwntgmnlskufcbrblayr',
     url: 'https://buildimg.vercel.app/',
     repository: 'https://github.com/nicomelendez/image-app',
     online: true,
@@ -172,7 +220,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Una aplicación ideal para gestionar tus lecturas. Con una interfaz intuitiva, permite organizar tus libros, añadir reseñas y controlar su estado de lectura.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/wl8hfiiigjbrcgllo5vp',
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/ux6hvdqrkl9slpswsjue',
     url: 'https://mybooks-nu.vercel.app/',
     repository: 'https://github.com/nicomelendez/mybooks',
     online: true,
@@ -211,6 +259,7 @@ export const informations: Info[] = [
     github: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     aprendisaje:
       'A lo largo del desarrollo del proyecto final, adquirí habilidades en el diseño y configuración de infraestructuras de red, la implementación de aplicaciones cliente/servidor con tecnologías como JSP y JavaEE, y la integración de bases de datos con SQL Developer y Power BI. Además, me familiaricé con el ciclo completo de pruebas de software, desde la creación de casos de prueba hasta la gestión de incidencias con herramientas como TestLink y Mantis, lo que me proporcionó una visión integral del desarrollo y la implementación de soluciones tecnológicas completas.',
+    tags: [TAGS.INFRASTRUCTURE, TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
   },
   {
     id: 2,
@@ -226,6 +275,7 @@ export const informations: Info[] = [
       'https://drive.google.com/drive/folders/1Rc8eOX2XjpnrqmaQE2r1YUlIrAye1EnV?usp=sharing',
     aprendisaje:
       'Durante el transcurso del tercer semestre y la ejecución del proyecto final, adquirí conocimientos en los fundamentos de infraestructura, incluyendo la conectividad de dispositivos y sus comunicaciones, así como la implementación de conceptos clave como el protocolo OSPF, access-lists, VLANs, channel groups y DHCP. Además, exploré tecnologías como JSP, Oracle y JWT, lo que amplió mi comprensión en el desarrollo de aplicaciones web y la gestión de bases de datos, brindándome una base para enfrentar desafíos futuros.',
+    tags: [TAGS.INFRASTRUCTURE, TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
   },
   {
     id: 3,
@@ -243,6 +293,7 @@ export const informations: Info[] = [
     path: 'proyecto-final-2do-semestre',
     aprendisaje:
       'Durante el segundo semestre, este proyecto me brindó experiencia en los fundamentos de programación, base de datos y testing. Las materias cursadas junto con el desarrollo del proyecto me permitieron comprender y vivir todo el ciclo de desarrollo de una aplicación. Desde la generación de casos de uso hasta la creación de casos de prueba, abordamos todos los aspectos necesarios para desarrollar una aplicación completa. Diseñamos la base de datos, desarrollamos tanto el cliente como el servidor, y realizamos pruebas que fueron registradas en TestLink y reportadas en Mantis. Esta experiencia práctica consolidó mi comprensión de los principios fundamentales y me preparó para futuros desafíos.',
+    tags: [TAGS.INFRASTRUCTURE, TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
   },
   {
     id: 4,
@@ -260,6 +311,7 @@ export const informations: Info[] = [
     path: 'hackathon-midudev-cloudinary',
     aprendisaje:
       'Durante la emocionante semana del hackathon, adquirí una valiosa experiencia que abarcó desde la comprensión de los servicios de Cloudinary hasta la implementación práctica de una aplicación web funcional. Aprendí a utilizar de manera efectiva las herramientas de Cloudinary para manipular imágenes en mi aplicación, lo que amplió significativamente mi conocimiento en el desarrollo web. Además, el desafío de diseñar un estado global y un hook personalizado para integrar los servicios y estados de la aplicación me permitió fortalecer mis habilidades en la creación de soluciones eficientes y escalables. Esta experiencia me enseñó la importancia de la creatividad, la adaptabilidad y el trabajo bajo presión en el desarrollo de software.',
+    tags: [TAGS.HACKATHON, TAGS.PROGRAMMING],
   },
   {
     id: 5,
@@ -275,6 +327,7 @@ export const informations: Info[] = [
     path: 'reto-hornex',
     aprendisaje:
       'Durante mi participación, adquirí experiencia en el desarrollo de habilidades blandas, especialmente en la comunicación efectiva y la negociación al tratar directamente con el cliente. Presentar y defender nuestras propuestas ante el dueño de la empresa requirió habilidades de comunicación claras. Además, el proceso de colaboración y trabajo en equipo me permitió mejorar mis habilidades de liderazgo, tolerancia a la frustración y capacidad para negociar. Esta experiencia no solo me brindó una perspectiva práctica sobre cómo trabajar con clientes en entornos profesionales, sino que también fortaleció mi confianza y habilidades interpersonales, preparándome mejor para futuras colaboraciones y desafíos en el mundo laboral.',
+    tags: [TAGS.COMMUNICATION, TAGS.TEAMWORK],
   },
   {
     id: 6,
@@ -290,5 +343,6 @@ export const informations: Info[] = [
     path: 'hackathon-nasa-space-challenge',
     aprendisaje:
       'Participar en el desafío de la NASA Space Apps Challenge fue una oportunidad única para desarrollar habilidades blandas clave. Trabajar en equipo me enseñó la importancia de la comunicación efectiva, la colaboración y la capacidad de defender nuestras ideas. Aprendimos a escuchar, a comprometernos con las opiniones de los demás y a resolver conflictos de manera constructiva.',
+    tags: [TAGS.HACKATHON, TAGS.COMMUNICATION, TAGS.TEAMWORK],
   },
 ]
