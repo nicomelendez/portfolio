@@ -279,7 +279,7 @@ export const informations: Info[] = [
     fecha: '2023',
     resumen:
       'Desarrollo de una aplicación para gestionar constancias, creada con Java, SQL developer y WindowsBuilder. Este proyecto abarcaba lo que aprendimos en Programación, Base de datos y Testing.',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/oztuemf3tdc3he2r1nn2',
+    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/a64a13u1w9w3npxeskux',
     github:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
     descripcion:
@@ -292,7 +292,7 @@ export const informations: Info[] = [
   {
     id: 4,
     fecha: '2023',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/zkimsh5iyyvdr28y95so',
+    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/r3rrpcjayt0lvnrgd0x1',
     resumen:
       'Desarrollé un editor de fotos que fue seleccionada como una de las diez mejores en el hackathon organizado por MiduDev y Cloudinary.',
     drive:
@@ -313,7 +313,7 @@ export const informations: Info[] = [
     fecha: '2022',
     resumen:
       'Manejo de metodología de Innovación Abierta, aplicada a la resolución de un reto de la empresa Hornex a través de la convocatoria realizada por Impulsa Industria (CIU).',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/iybt1szvewvyu9yfbnrk',
+    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/ai53jxk9shih6c87era5',
     drive:
       'https://drive.google.com/file/d/1AbVWgJw6vo-cWhRUH3h-P5ReG9A5_J_W/view?usp=sharing',
     descripcion:
@@ -330,7 +330,7 @@ export const informations: Info[] = [
       'Participé en el concurso NASA Space Apps Challenge, donde ganamos con un gurpo de amigos a nivel nacional clasificando a la fase global.',
     fecha: '2021',
     link: 'https://2021.spaceappschallenge.org/challenges/statements/space-quest-the-game/teams/ctrl-y-1/project',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/e0ohbru0kexku9phwobb',
+    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/bdrdmkwlhbm7atkrxjfw',
     drive: 'https://photos.app.goo.gl/qH8uRyVM8Hx7DNTz6',
     descripcion:
       "Durante tres días, trabaje junto a cuatro amigos en la creación de una demo de un juego educativo para el desafío 'Space Quest: The Game' del NASA Space Apps Challenge. Abordamos temas del espacio, diseñando una idea de juego interactivo que enseñara a los jugadores sobre el espacio. Esta experiencia nos permitió fortalecer nuestras habilidades blandas al colaborar en equipo y defender una idea.",
