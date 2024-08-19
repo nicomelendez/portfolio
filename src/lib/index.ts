@@ -257,7 +257,13 @@ export const informations: Info[] = [
     github: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     aprendisaje:
       'A lo largo del desarrollo del proyecto final, adquirí habilidades en el diseño y configuración de infraestructuras de red, la implementación de aplicaciones cliente/servidor con tecnologías como JSP y JavaEE, y la integración de bases de datos con SQL Developer y Power BI. Además, me familiaricé con el ciclo completo de pruebas de software, desde la creación de casos de prueba hasta la gestión de incidencias con herramientas como TestLink y Mantis, lo que me proporcionó una visión integral del desarrollo y la implementación de soluciones tecnológicas completas.',
-    tags: [TAGS.INFRASTRUCTURE, TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
+    tags: [
+      TAGS.INFRASTRUCTURE,
+      TAGS.PROGRAMMING,
+      TAGS.DATABASE,
+      TAGS.TESTING,
+      TAGS.TEAMWORK,
+    ],
   },
   {
     id: 2,
@@ -271,7 +277,13 @@ export const informations: Info[] = [
     path: 'proyecto-final-3er-semestre',
     aprendisaje:
       'Durante el transcurso del tercer semestre y la ejecución del proyecto final, adquirí conocimientos en los fundamentos de infraestructura, incluyendo la conectividad de dispositivos y sus comunicaciones, así como la implementación de conceptos clave como el protocolo OSPF, access-lists, VLANs, channel groups y DHCP. Además, exploré tecnologías como JSP, Oracle y JWT, lo que amplió mi comprensión en el desarrollo de aplicaciones web y la gestión de bases de datos, brindándome una base para enfrentar desafíos futuros.',
-    tags: [TAGS.INFRASTRUCTURE, TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
+    tags: [
+      TAGS.INFRASTRUCTURE,
+      TAGS.PROGRAMMING,
+      TAGS.DATABASE,
+      TAGS.TESTING,
+      TAGS.TEAMWORK,
+    ],
   },
   {
     id: 3,
@@ -287,7 +299,7 @@ export const informations: Info[] = [
     path: 'proyecto-final-2do-semestre',
     aprendisaje:
       'Durante el segundo semestre, este proyecto me brindó experiencia en los fundamentos de programación, base de datos y testing. Las materias cursadas junto con el desarrollo del proyecto me permitieron comprender y vivir todo el ciclo de desarrollo de una aplicación. Desde la generación de casos de uso hasta la creación de casos de prueba, abordamos todos los aspectos necesarios para desarrollar una aplicación completa. Diseñamos la base de datos, desarrollamos tanto el cliente como el servidor, y realizamos pruebas que fueron registradas en TestLink y reportadas en Mantis. Esta experiencia práctica consolidó mi comprensión de los principios fundamentales y me preparó para futuros desafíos.',
-    tags: [TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
+    tags: [TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING, TAGS.TEAMWORK],
   },
   {
     id: 4,
