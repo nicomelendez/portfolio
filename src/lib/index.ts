@@ -287,7 +287,7 @@ export const informations: Info[] = [
     path: 'proyecto-final-2do-semestre',
     aprendisaje:
       'Durante el segundo semestre, este proyecto me brindó experiencia en los fundamentos de programación, base de datos y testing. Las materias cursadas junto con el desarrollo del proyecto me permitieron comprender y vivir todo el ciclo de desarrollo de una aplicación. Desde la generación de casos de uso hasta la creación de casos de prueba, abordamos todos los aspectos necesarios para desarrollar una aplicación completa. Diseñamos la base de datos, desarrollamos tanto el cliente como el servidor, y realizamos pruebas que fueron registradas en TestLink y reportadas en Mantis. Esta experiencia práctica consolidó mi comprensión de los principios fundamentales y me preparó para futuros desafíos.',
-    tags: [TAGS.INFRASTRUCTURE, TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
+    tags: [TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING],
   },
   {
     id: 4,
