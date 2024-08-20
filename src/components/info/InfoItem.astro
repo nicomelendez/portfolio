@@ -5,14 +5,14 @@ const { img, fecha, titulo, resumen, path, tags } = Astro.props
 ---
 
 <article
-  class='flex flex-col mx-auto justify-between gap-y-6 bg-white rounded-lg sombra animacion hover:shadow-lg transition-all duration-500'
+  class='flex flex-col mx-auto justify-between gap-y-6 max-w-[700px] lg:max-w-none bg-white rounded-lg sombra hover:shadow-lg transition-all duration-500'
 >
   <div class='flex flex-col gap-y-6'>
     <picture class='flex flex-col'>
       <img
         loading='lazy'
         src={`${img}`}
-        class='object-cover aspect-video lg:aspect-auto md:h-[240px] lg:h-[260px] xl:h-[280px] rounded-t-lg'
+        class='object-cover aspect-video lg:aspect-auto md:h-[240px] lg:h-[260px] xl:h-[280px] rounded-t-lg shadow-md'
         alt={`Imagen de ${titulo}`}
       />
     </picture>
