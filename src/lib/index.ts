@@ -94,7 +94,7 @@ const TAGS = {
   },
   WILDFLY: {
     name: 'Wildfly',
-    class: 'bg-[#072541]/50 text-white',
+    class: 'bg-[#0A3D66]/50 text-white',
     icon: WildFly,
   },
   SQL: {
