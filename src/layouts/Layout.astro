@@ -40,7 +40,8 @@ const { title } = Astro.props
   :root {
     --color-primary: #e3f7eb;
     --color-secondary: #fff;
-    --color-tertiary: #0dbc5c;
+    --color-tertiary: #4682B4;
+    --color-fourth:#0DBC5C;
     --background-image: #eff2f8;
   }
 
@@ -70,7 +71,7 @@ const { title } = Astro.props
 
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: theme('colors.tertiary');
+    background-color: theme('colors.fourth');
     border: 2px solid transparent;
     background-clip: content-box;
   }
@@ -84,5 +85,23 @@ const { title } = Astro.props
   }
   .sombra {
     filter: drop-shadow(-2px 0px 5px rgba(0, 0, 0, 0.2));
+  }
+
+  .sombra-low {
+    filter: drop-shadow(-2px 0px 5px rgba(43, 42, 42, 0.1));
+  }
+
+  .gradient-text {
+    font-weight: bold; /* Puedes ajustar el peso de la fuente */
+    background: linear-gradient(
+      to right,
+      #22c55e,
+      #059669
+    ); /* Degradado de fondo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: background 0.3s ease-in-out; /* Transición para hover */
   }
 </style>
