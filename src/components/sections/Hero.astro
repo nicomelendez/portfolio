@@ -47,7 +47,7 @@ import Photo from '@/utils/Photo.astro'
     </div>
   </div>
   <!-- /* From Uiverse.io by mrhyddenn */ -->
-  <div class='scrolldown lg:hidden' style='--color: #0DBC5C'>
+  <div class='scrolldown lg:hidden'>
     <div class='chevrons'>
       <div class='chevrondown'></div>
       <div class='chevrondown'></div>
@@ -58,10 +58,9 @@ import Photo from '@/utils/Photo.astro'
   /* From Uiverse.io by mrhyddenn */
   .scrolldown {
     position: relative;
-    width: var(--sizeX);
-    height: var(--sizeY);
-    margin-left: var(sizeX / 2);
-    border: calc(var(--sizeX) / 10) solid var(--color);
+    width: 30px;
+    height: 50px;
+    border: calc(30px / 10) solid #0DBC5C;
     border-radius: 50px;
     box-sizing: border-box;
     margin-bottom: 16px;
@@ -76,7 +75,7 @@ import Photo from '@/utils/Photo.astro'
     width: 6px;
     height: 6px;
     margin-left: -3px;
-    background-color: var(--color);
+    background-color: #0DBC5C;
     border-radius: 100%;
     animation: scrolldown-anim 2s infinite;
     box-sizing: border-box;
@@ -119,7 +118,7 @@ import Photo from '@/utils/Photo.astro'
   .chevrondown {
     margin-top: -6px;
     position: relative;
-    border: solid var(--color);
+    border: solid #0DBC5C;
     border-width: 0 3px 3px 0;
     display: inline-block;
     width: 10px;
