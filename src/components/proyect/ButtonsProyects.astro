@@ -12,7 +12,7 @@ interface Props {
 const { online, repository, url } = Astro.props;
 ---
 
-<div class="flex flex-wrap gap-2 w-ful items-end">
+<div class="flex flex-wrap gap-2 w-full items-end">
   {online && <BtnVisitar url={url} />}
 
   {repository !== "-" && <BtnGithub repository={repository} />}

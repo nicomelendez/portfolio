@@ -1,12 +1,13 @@
 ---
-import GitHub from "@/components/icons/GitHub.astro";
+import GitHub from '@/components/icons/GitHub.astro'
 ---
 
 <a
-target="_blank"
-href={Astro.props.repository}
-class="flex items-center  font-medium gap-x-2 bg-[#24292F] hover:bg-[#24292F]/90 text-xs text-white py-2 px-3 rounded-full shadow-md"
+  target='_blank'
+  href={Astro.props.repository}
+  rel='noopener noreferrer'
+  class='flex items-center font-medium gap-x-2 bg-[#24292F] hover:bg-[#24292F]/90 text-xs text-white py-2 px-3 rounded-lg shadow-md'
 >
-<GitHub />
-GitHub
+  <GitHub />
+  GitHub
 </a>
