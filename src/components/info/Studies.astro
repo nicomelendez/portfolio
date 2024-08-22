@@ -3,20 +3,19 @@ import InfoIcon from '@/components/icons/InfoIcon.astro'
 import Diploma from '../icons/Diploma.astro'
 ---
 
-<h3 class='text-xl mt-6 font-bold text-[#0DBC5C] sombra'>Estudios</h3>
-<p class='text-black texto pb-3'>
-  Técnico Superior en Informática y actualmente curso el quinto semestre de <strong
-    >Licenciatura en Tecnologías de la Información</strong
-  > en la Universidad Tecnológica del Uruguay. Durante estos semestres, he adquirido
-  conocimientos en <strong
-    >programación, bases de datos, infraestructura y testing</strong
-  >. La participación en <strong
+<h3 class='text-xl mt-6 font-bold gradient-text sombra-low'>Estudios</h3>
+<p class='text-gray-900 pb-3 text-pretty'>
+  <strong>Técnico Superior en Informática</strong> y actualmente curso el quinto
+  semestre de <strong>Licenciatura en Tecnologías de la Información</strong> en la
+  Universidad Tecnológica del Uruguay. Durante estos semestres, he adquirido conocimientos
+  en <strong>programación, bases de datos, infraestructura y testing</strong>.
+  La participación en <strong
     >proyectos grupales ha fortalecido mis habilidades blandas</strong
   >, contribuyendo a mi crecimiento personal.
 </p>
 
 <div class='space-y-4 bg-white rounded-lg sombra max-w-[1300px] mb-2'>
-  <details class='group [&_summary::-webkit-details-marker]:hidden'>
+  <details class='group [&_summary::-webkit-details-marker]:hidden' open>
     <summary
       class='flex flex-col sm:flex-row cursor-pointer items-center justify-between gap-y-3 sm:gap-y-0 rounded-lg bg-white p-4 text-gray-900'
     >
@@ -78,9 +77,7 @@ import Diploma from '../icons/Diploma.astro'
       </div>
     </summary>
 
-    <p
-      class='mt-4 px-4 leading-relaxed text-black text-sm md:text-base textocurso'
-    >
+    <p class='mt-4 px-4 leading-relaxed text-black text-sm md:text-base'>
       Mi experiencia universitaria hasta el momento ha sido enriquecedora y
       práctica, permitiéndome explorar áreas fundamentales para el desarrollo de
       aplicaciones. Desde programación y bases de datos hasta testing e
@@ -175,9 +172,7 @@ import Diploma from '../icons/Diploma.astro'
         </svg>
       </div>
     </summary>
-    <p
-      class='mt-4 px-4 leading-relaxed text-black text-sm md:text-base textocurso'
-    >
+    <p class='mt-4 px-4 leading-relaxed text-black text-sm md:text-base'>
       Al concluir mi bachillerato en Informática con énfasis en Desarrollo y
       Soporte, pude aplicar mis conocimientos en diversas áreas clave. Desde la
       instalación y configuración de hardware y software, hasta el análisis,
@@ -210,14 +205,7 @@ import Diploma from '../icons/Diploma.astro'
   </details>
 </div>
 <style>
-  .texto {
-    text-wrap: pretty;
-    width: 100%;
-    max-width: 1300px;
-  }
-  .textocurso {
-    text-wrap: pretty;
-    padding-right: 40px;
-    max-width: 1260px;
+  strong {
+    color: #111827;
   }
 </style>

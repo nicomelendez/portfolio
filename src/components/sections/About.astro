@@ -1,5 +1,4 @@
 ---
-import ListInfo from "@/components/info/ListInfo.astro";
 import ProfessionalProfile from "@/components/info/ProfessionalProfile.astro";
 import Studies from "@/components/info/Studies.astro";
 import User from "@/components/icons/User.astro";
@@ -8,27 +7,26 @@ import Photo from "../utils/Photo.astro";
 
 <section
   id="sobre-mi"
-  class="bg-[#E3F7EB] flex flex-col gap-y-4 px-5 md:px-10 pb-14"
+  class="bg-primary flex flex-col gap-y-4 px-5 md:px-10 pb-14"
 >
   <h2
-    class="text-3xl font-bold sm:text-4xl text-[#0DBC5C] text-center py-10 flex items-center justify-center gap-x-2"
+    class="text-3xl font-bold sm:text-4xl text-fourth text-center py-10 flex items-center justify-center gap-x-2 sombra-low"
   >
     <User class="w-7 h-7 sm:w-9 sm:h-9" />
     Sobre mí
   </h2>
-  <div class="xl:flex xl:items-center xl:gap-x-24 pb-10">
+  <div class="xl:grid xl:grid-cols-2">
     <div class="flex flex-col gap-y-4 xl:max-w-[1000px]">
-      <h3 class="text-xl mt-6 font-bold text-[#0DBC5C] sombra">
+      <h3 class="text-xl mt-6 font-bold gradient-text sombra-low">
         Perfil Profesional
       </h3>
       <ProfessionalProfile />
       <Studies />
     </div>
-    <div class="hidden xl:flex xl:items-start xl:justify-center min-w-[500px]">
+    <div class="hidden xl:flex xl:items-start xl:justify-center min-w-[500px] pt-4">
       <Photo>
     </div>
   </div>
-  <ListInfo />
 </section>
 
 <style>

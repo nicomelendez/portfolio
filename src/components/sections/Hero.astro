@@ -5,27 +5,21 @@ import Photo from '@/utils/Photo.astro'
 ---
 
 <section
-  class='flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:gap-x-20 items-center justify-center py-5 md:py-10 bg-primary min-h-[100vh] max-h-[650px] mx-auto lg:max-h-none lg:min-h-[70vh] xl:h-[60vh] px-5 md:px-10'
+  class='flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:gap-x-20 items-center justify-center py-5 md:py-10 bg-primary min-h-[90vh] max-h-[650px] mx-auto lg:max-h-none lg:min-h-[70vh] xl:h-[60vh] px-5 md:px-10'
 >
   <Photo />
 
   <div class='max-w-xl'>
     <div class='mx-auto text-center lg:text-left'>
-      <h1
-        class='text-slate-800/90 font-extrabold text-3xl md:text-4xl xl:text-5xl flex flex-col gap-y-3'
-      >
+      <h1 class='gradient-text text-4xl xl:text-5xl sombra-low pb-2'>
         Nicolás Meléndez
-        <strong
-          class='font-bold text-tertiary sm:block text-2xl xl:text-3xl'
-        >
-          Técnico Superior en Informática
-        </strong>
       </h1>
+      <strong class='font-bold text-tertiary text-xl sm:text-2xl xl:text-3xl'>
+        Técnico Superior en Informática
+      </strong>
 
-      <p class='mt-4 xl:text-lg/relaxed text-black'>
-        Desarrollador de soluciones web, móviles y de escritorio, utilizando
-        tecnologías como Astro, Next.js, JavaServer Pages, JavaEE, Kotlin, SQL
-        Developer y MongoDB.
+      <p class='mt-4 text-balance xl:text-lg/relaxed text-black'>
+        Desarrollador con experiencia en JavaScript, Java, HTML y CSS. Manejo herramientas y tecnologías como Astro, React y Next.js.
       </p>
 
       <div class='mt-8 flex flex-wrap justify-center lg:justify-start gap-4'>
@@ -52,4 +46,105 @@ import Photo from '@/utils/Photo.astro'
       </div>
     </div>
   </div>
+  <!-- /* From Uiverse.io by mrhyddenn */ -->
+  <div class='scrolldown lg:hidden' style='--color: #0DBC5C'>
+    <div class='chevrons'>
+      <div class='chevrondown'></div>
+      <div class='chevrondown'></div>
+    </div>
+  </div>
 </section>
+<style>
+  /* From Uiverse.io by mrhyddenn */
+  .scrolldown {
+    --color: white;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .scrolldown::before {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+  }
+
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+
+  .chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+
+  .chevrondown:nth-child(odd) {
+    animation: pulse54012 500ms ease infinite alternate;
+  }
+
+  .chevrondown:nth-child(even) {
+    animation: pulse54012 500ms ease infinite alternate 250ms;
+  }
+
+  @keyframes pulse54012 {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 0.5;
+    }
+  }
+</style>

@@ -17,10 +17,10 @@ const { title, image, url, repository, online, resumen, technologies } =
   <TechnologiesProyect technologies={technologies} />
   <div class="flex flex-col gap-y-5 justify-between h-[150px]">
     <div class="flex flex-col gap-y-2">
-      <h3 class="text-xl font-extrabold text-gray-900">
+      <h3 class="text-2xl font-bold text-tertiary sombra-low">
         {title}
       </h3>
-      <p class="block text-sm text-gray-500 texto">{resumen}</p>
+      <p class="block text-sm text-gray-700 text-pretty">{resumen}</p>
     </div>
 
     <ButtonsProyects
@@ -34,8 +34,5 @@ const { title, image, url, repository, online, resumen, technologies } =
 <style>
   .sombra {
     filter: drop-shadow(-2px 0px 5px rgba(0, 0, 0, 0.1));
-  }
-  .texto {
-    text-wrap: pretty;
   }
 </style>

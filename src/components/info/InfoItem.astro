@@ -24,18 +24,18 @@ const { img, fecha, titulo, resumen, path, tags } = Astro.props
             tags.map((tag: any) => (
               <li>
                 <span
-                  class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1.5 px-3 border border-white/10 shadow-md`}
+                  class={`flex gap-x-2 items-center rounded-full text-xs lg:text-sm ${tag.class} py-1.5 px-3 border border-white/10 shadow-md`}
                 >
-                  <tag.icon class='w-4 h-4' />
+                  <tag.icon class='size-4 lg:size-5' />
                   {tag.name}
                 </span>
               </li>
             ))
           }
         </ul>
-        <h3 class='font-bold text-gray-900'>{titulo}</h3>
+        <h3 class='text-2xl font-bold text-gray-900'>{titulo}</h3>
 
-        <p class='text-xs md:text-sm text-pretty'>{resumen}</p>
+        <p class='text-sm text-pretty'>{resumen}</p>
       </div>
 
       <div class='flex items-center justify-end'>
