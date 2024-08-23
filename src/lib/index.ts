@@ -268,7 +268,7 @@ export const informations: Info[] = [
   },
   {
     id: 2,
-    titulo: 'Proyecto Infraestructura 3er semestre',
+    titulo: 'Proyecto 3er semestre',
     resumen:
       'Diseño e implementación de infraestructura interconectando sedes universitarias a través de ISP, configuraciones como VLAN, ChannelGroup, Accesslist, etc. Junto a una aplicación de gestión de usuarios con JSP y JavaEE.',
     fecha: '2023',
@@ -308,7 +308,7 @@ export const informations: Info[] = [
     fecha: '2023',
     img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/r3rrpcjayt0lvnrgd0x1',
     resumen:
-      'Desarrollé un editor de fotos que fue seleccionada como una de las diez mejores en el hackathon organizado por MiduDev y Cloudinary.',
+      'Desarrollé un editor de fotos que fue seleccionado como uno de los diez mejores proyectos en el hackathon organizado por MiduDev y Cloudinary, utilizando sus servicios para manipular imágenes.',
     drive:
       'https://drive.google.com/drive/folders/1eFYMjZ7Y69OsxracrwwUnUg7bRtNNsW1?usp=sharing',
     link: 'https://buildimg.vercel.app/',
@@ -326,7 +326,7 @@ export const informations: Info[] = [
     titulo: 'Reto Hornex - Impulsa Industria (CIU)',
     fecha: '2022',
     resumen:
-      'Manejo de metodología de Innovación Abierta, aplicada a la resolución de un reto de la empresa Hornex a través de la convocatoria realizada por Impulsa Industria (CIU).',
+      'Aplicación de la metodología de Innovación Abierta para resolver un reto propuesto por la empresa Hornex, en el marco del programa Impulsa Industria organizado por la Cámara de Industrias del Uruguay (CIU).',
     img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/ai53jxk9shih6c87era5',
     drive:
       'https://drive.google.com/file/d/1AbVWgJw6vo-cWhRUH3h-P5ReG9A5_J_W/view?usp=sharing',
@@ -341,7 +341,7 @@ export const informations: Info[] = [
     id: 6,
     titulo: 'NASA Space Apps Challenge',
     resumen:
-      'Participé en el concurso NASA Space Apps Challenge, donde ganamos con un gurpo de amigos a nivel nacional clasificando a la fase global.',
+      'Participé en el NASA Space Apps Challenge junto a un grupo de amigos, desarrollando una demo de un juego educativo que nos permitió clasificar a la fase global del hackathon.',
     fecha: '2021',
     link: 'https://2021.spaceappschallenge.org/challenges/statements/space-quest-the-game/teams/ctrl-y-1/project',
     img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/bdrdmkwlhbm7atkrxjfw',
