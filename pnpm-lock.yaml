@@ -22,8 +22,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(astro@4.14.5(lightningcss@1.26.0)(rollup@2.79.1)(terser@5.31.6)(typescript@5.5.4))(tailwindcss@3.4.10)
       '@astrojs/vercel':
-        specifier: 7.7.2
-        version: 7.7.2(astro@4.14.5(lightningcss@1.26.0)(rollup@2.79.1)(terser@5.31.6)(typescript@5.5.4))
+        specifier: 7.8.0
+        version: 7.8.0(astro@4.14.5(lightningcss@1.26.0)(rollup@2.79.1)(terser@5.31.6)(typescript@5.5.4))
       '@midudev/tailwind-animations':
         specifier: 0.0.7
         version: 0.0.7(tailwindcss@3.4.10)
@@ -100,8 +100,8 @@ packages:
     resolution: {integrity: sha512-/ca/+D8MIKEC8/A9cSaPUqQNZm+Es/ZinRv0ZAzvu2ios7POQSsVD+VOj7/hypWNsNM3T7RpfgNq7H2TU1KEHA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
 
-  '@astrojs/vercel@7.7.2':
-    resolution: {integrity: sha512-mwnXz4OHE+X20kyQfrxAoLCe+uIhZ1w+G7fJnERSua9/DgX+j0Gvfku3D33bNyxaIwLQB5BOGAu2eZoi+gna4Q==}
+  '@astrojs/vercel@7.8.0':
+    resolution: {integrity: sha512-cpY14PPrKhAsYZp/tfRSIfKdiPctvvPfOH8z3USLJEAJ5lLfToUHEGTJzNfGqCBtd61QftypIxIlTHGuFY30UQ==}
     peerDependencies:
       astro: ^4.2.0
 
@@ -2938,9 +2938,6 @@ packages:
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
-  set-cookie-parser@2.7.0:
-    resolution: {integrity: sha512-lXLOiqpkUumhRdFF3k1osNXCy9akgx/dyPZ5p8qAg9seJzXr5ZrlqZuWIMuY6ejOsVLE6flJ5/h3lsn57fQ/PQ==}
-
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
@@ -3699,7 +3696,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/vercel@7.7.2(astro@4.14.5(lightningcss@1.26.0)(rollup@2.79.1)(terser@5.31.6)(typescript@5.5.4))':
+  '@astrojs/vercel@7.8.0(astro@4.14.5(lightningcss@1.26.0)(rollup@2.79.1)(terser@5.31.6)(typescript@5.5.4))':
     dependencies:
       '@astrojs/internal-helpers': 0.4.1
       '@vercel/analytics': 1.3.1
@@ -3708,7 +3705,6 @@ snapshots:
       astro: 4.14.5(lightningcss@1.26.0)(rollup@2.79.1)(terser@5.31.6)(typescript@5.5.4)
       esbuild: 0.21.5
       fast-glob: 3.3.2
-      set-cookie-parser: 2.7.0
       web-vitals: 3.5.2
     transitivePeerDependencies:
       - encoding
@@ -6982,8 +6978,6 @@ snapshots:
   server-only@0.0.1: {}
 
   set-blocking@2.0.0: {}
-
-  set-cookie-parser@2.7.0: {}
 
   set-function-length@1.2.2:
     dependencies:
