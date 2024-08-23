@@ -289,7 +289,7 @@ export const informations: Info[] = [
   },
   {
     id: 3,
-    titulo: 'Proyecto PDT 2do semestre',
+    titulo: 'Proyecto 2do semestre',
     fecha: '2023',
     resumen:
       'Desarrollo de una aplicación para gestionar constancias, creada con Java, SQL developer y WindowsBuilder. Este proyecto abarcaba lo que aprendimos en Programación, Base de datos y Testing.',
