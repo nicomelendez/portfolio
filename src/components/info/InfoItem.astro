@@ -5,7 +5,7 @@ const { img, titulo, resumen, path, tags } = Astro.props
 ---
 
 <article
-  class='flex flex-col mx-auto justify-between gap-y-6 max-w-[700px] lg:max-w-none bg-white rounded-lg sombra hover:shadow-lg transition-all duration-500'
+  class='flex flex-col mx-auto justify-between gap-y-6 max-w-[700px] lg:max-w-none bg-white rounded-lg sombra cursor-crosshair hover:shadow-xl hover:scale-[1.02] transition-all duration-300'
 >
   <div class='flex flex-col justify-between gap-y-6'>
     <picture class='flex flex-col'>
@@ -18,7 +18,7 @@ const { img, titulo, resumen, path, tags } = Astro.props
     </picture>
 
     <div class='flex flex-col justify-between px-5'>
-      <div class='flex flex-col gap-y-4 md:min-h-[240px] pb-5 md:pb-0'>
+      <div class='flex flex-col gap-y-4 md:min-h-[240px] xl:min-h-[390px] xlbig:min-h-[280px] pb-5 md:pb-0'>
         <h3 class='text-2xl font-bold text-tertiary'>{titulo}</h3>
         <p class='text-sm text-pretty pb-2'>{resumen}</p>
         <ul class='flex flex-wrap gap-2 flex-row items-center pb-8'>
