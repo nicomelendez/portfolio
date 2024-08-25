@@ -177,7 +177,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con BuildImg ahora mismo!.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/wwntgmnlskufcbrblayr',
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/ikrptdr7onkerlj9bcsg',
     url: 'https://buildimg.vercel.app/',
     repository: 'https://github.com/nicomelendez/image-app',
     online: true,
@@ -234,7 +234,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Una solución completa para la gestión de usuarios, constancias, eventos y la generación de PDF. Simplifica los procesos administrativos.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/worhap3a0iaz7ifxlnvb',
+      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/loi6jqsic91xdojpo6z1',
     url: '',
     repository:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
