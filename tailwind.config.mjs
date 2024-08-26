@@ -14,7 +14,7 @@ export default {
       },
       screens: {
         xs: '360px',
-        xlbig: '1300px',
+        xlbig: '1450px',
         xlmax: '1700px',
         ...defaultTheme.screens,
       },

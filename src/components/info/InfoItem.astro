@@ -3,22 +3,21 @@ import InfoIcon from '@/components/icons/InfoIcon.astro'
 
 const { img, titulo, resumen, path, tags } = Astro.props
 ---
-
 <article
-  class='flex flex-col mx-auto justify-between gap-y-6 max-w-[700px] lg:max-w-none bg-white rounded-lg sombra cursor-crosshair hover:shadow-xl lg:hover:scale-[1.02] transition-all duration-300'
+  class='h-full flex flex-col mx-auto justify-between gap-y-6 max-w-[700px] lg:max-w-none bg-secondary rounded-lg sombra cursor-crosshair hover:shadow-xl hover:shadow-primary transition-all duration-300'
 >
   <div class='flex flex-col justify-between gap-y-6'>
     <picture class='flex flex-col'>
       <img
         loading='lazy'
         src={`${img}`}
-        class='object-cover aspect-video lg:aspect-auto md:h-[240px] lg:h-[260px] xl:h-[280px] rounded-t-lg shadow-md'
+        class='object-cover aspect-video h-[300px] rounded-t-lg'
         alt={`Imagen de ${titulo}`}
       />
     </picture>
 
     <div class='flex flex-col justify-between px-5'>
-      <div class='flex flex-col gap-y-4 md:min-h-[240px] xl:min-h-[390px] xlbig:min-h-[280px] pb-5 md:pb-0'>
+      <div class='flex flex-col gap-y-4 md:min-h-[270px] pb-5 md:pb-0'>
         <h3 class='text-2xl font-bold text-tertiary'>{titulo}</h3>
         <p class='text-sm text-pretty pb-2'>{resumen}</p>
         <ul class='flex flex-wrap gap-2 flex-row items-center pb-8'>
@@ -26,9 +25,9 @@ const { img, titulo, resumen, path, tags } = Astro.props
             tags.map((tag: any) => (
               <li>
                 <span
-                  class={`flex gap-x-1 items-center rounded-full text-xs lg:text-sm ${tag.class} py-1.5 px-2 border border-white/10 shadow-md`}
+                  class={`flex gap-x-1 items-center rounded-full text-xs xlmax:text-sm ${tag.class} py-1.5 px-2 border border-white/10 shadow-md`}
                 >
-                  <tag.icon class='size-4 lg:size-5' />
+                  <tag.icon class='size-4 ize-5:size-5' />
                   {tag.name}
                 </span>
               </li>

@@ -12,9 +12,7 @@ import { informations } from '@/lib/index.ts'
     Logros
   </h2>
 
-  <div
-    class='grid lg:grid-cols-2 xlbig:grid-cols-3 py-5 w-full place-content-center gap-y-32  place-items-center'
-  >
+  <div class="logros-grid">
     {
       informations.map((info) => {
         return <InfoItem {...info} />
@@ -26,4 +24,11 @@ import { informations } from '@/lib/index.ts'
   .sombra {
     filter: drop-shadow(-2px 0px 5px rgba(0, 0, 0, 0.1));
   }
+  .logros-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+  justify-items: center;
+}
 </style>
