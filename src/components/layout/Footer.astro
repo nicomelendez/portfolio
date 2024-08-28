@@ -24,39 +24,38 @@ import { contacts, navs } from '@/lib/index.ts'
     </a>
   </div>
 
-  <div class='lg:flex lg:items-end lg:justify-between'>
-    <ul class='flex justify-center lg:justify-start gap-x-6 pb-10'>
-      {
-        contacts.map(({ icon: Icon, url, color }) => {
-          return (
-            <a
-              target='_blank'
-              href={url}
-              class='cursor-pointer hover:scale-125 transition-all duration-400'
-            >
-              <Icon styles='size-6 md:size-8' color={color} />
-            </a>
-          )
-        })
-      }
-    </ul>
 
-    <ul class='flex flex-wrap items-center justify-center gap-4 md:gap-x-6'>
-      {
-        navs.map((item) => {
-          return (
-            <li>
-              <a
-                class='flex items-center gap-x-1 md:gap-x-2 hover:underline text-sm md:text-base'
-                href={`${item.url}`}
-              >
-                <item.icon class='w-4 h-4 md:w-5 md:h-5' />
-                {item.text}
-              </a>
-            </li>
-          )
-        })
-      }
-    </ul>
-  </div>
+  <ul class='flex justify-center lg:justify-start gap-x-6 py-8 lg:py-0'>
+    {
+      contacts.map(({ icon: Icon, url, color }) => {
+        return (
+          <a
+            target='_blank'
+            href={url}
+            class='cursor-pointer hover:scale-125 transition-all duration-400'
+          >
+            <Icon styles='size-6 md:size-8' color={color} />
+          </a>
+        )
+      })
+    }
+  </ul>
+
+  <ul class='flex flex-wrap items-center justify-center gap-5 xs:gap-x-6'>
+    {
+      navs.map((item) => {
+        return (
+          <li>
+            <a
+              class='flex items-center gap-x-1 md:gap-x-2 hover:underline text-base md:text-lg'
+              href={`${item.url}`}
+            >
+              <item.icon class='w-4 h-4 md:w-5 md:h-5' />
+              {item.text}
+            </a>
+          </li>
+        )
+      })
+    }
+  </ul>
 </footer>
