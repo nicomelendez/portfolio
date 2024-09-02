@@ -12,7 +12,9 @@ export default defineConfig({
   },
   integrations: [tailwind()],
   output: "server",
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
   vite: {
     build: {
       cssMinify: "lightningcss"
