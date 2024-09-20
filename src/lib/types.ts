@@ -13,7 +13,7 @@ export interface Proyect {
   url: string
   repository: string
   online: boolean
-  technologies: any
+  tags: any
 }
 
 export interface Technology {
@@ -39,10 +39,10 @@ export interface Study {
 
 export interface Info {
   id: number
-  titulo: string
+  title: string
   resumen: string
   fecha: string
-  img: string
+  image: string
   descripcion: string
   path: string
   drive?: string

@@ -167,21 +167,21 @@ export const proyects: Proyect[] = [
     url: 'https://doc-ai-free.vercel.app/',
     repository: 'https://github.com/nicomelendez/doc-ai',
     online: true,
-    technologies: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
+    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
   },
   {
     id: 2,
-    title: 'BuildIMG',
+    title: 'Buildimage',
     description:
-      'BuildImg es un potente editor de imágenes desarrollado con Next.js y aprovechando la potencia de Cloudinary.',
+      'Buildimage es un potente editor de imágenes desarrollado con Next.js y aprovechando la potencia de Cloudinary.',
     resumen:
-      'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con BuildImg ahora mismo!.',
+      'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con Buildimage ahora mismo!.',
     image:
       'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/ikrptdr7onkerlj9bcsg',
-    url: 'https://buildimg.vercel.app/',
+    url: 'https://buildimage.vercel.app/',
     repository: 'https://github.com/nicomelendez/image-app',
     online: true,
-    technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.CLOUDINARY],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.CLOUDINARY],
   },
   {
     id: 4,
@@ -195,7 +195,7 @@ export const proyects: Proyect[] = [
     url: '',
     repository: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     online: false,
-    technologies: [TAGS.JSP, TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
+    tags: [TAGS.JSP, TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
   },
   {
     id: 3,
@@ -210,7 +210,7 @@ export const proyects: Proyect[] = [
     repository:
       'https://github.com/nicomelendez/proyecto-de-tecnicatura-app-movil',
     online: false,
-    technologies: [TAGS.KOTLIN],
+    tags: [TAGS.KOTLIN],
   },
   {
     id: 5,
@@ -224,7 +224,7 @@ export const proyects: Proyect[] = [
     url: 'https://mybooks-nu.vercel.app/',
     repository: 'https://github.com/nicomelendez/mybooks',
     online: true,
-    technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
   },
   {
     id: 6,
@@ -239,18 +239,18 @@ export const proyects: Proyect[] = [
     repository:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
     online: false,
-    technologies: [TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
+    tags: [TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
   },
 ]
 
 export const informations: Info[] = [
   {
     id: 1,
-    titulo: 'Proyecto Final de Tecnicatura',
+    title: 'Proyecto Final de Tecnicatura',
     resumen:
       'Desarrollo e implementación de un producto completo que incluye una aplicación web y móvil, bases de datos operativa y corporativa, infraestructura de red simulada en GNS3, y un proceso de testing con herramientas como TestLink y Mantis.',
     fecha: '2024',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/pyj9iz5z2u9sraln86u1',
+    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/pyj9iz5z2u9sraln86u1',
     descripcion:
       'Este proyecto final abarcó el desarrollo de una aplicación web cliente/servidor donde la API y el cliente se ejecutaban en el mismo proyecto. La aplicación móvil, desarrollada en Kotlin, consumía la API de la aplicación web. La base de datos operativa fue creada con SQL Developer, y Power BI se utilizó para visualizar los datos en la base de datos corporativa. La infraestructura de red se simuló en GNS3, configurando una topología que interconectaba dos sedes universitarias mediante VPN y utilizando dos firewalls pfSense para establecer una DMZ en la sede central. El proceso de testing incluyó seis ciclos de pruebas, gestionando casos de prueba con TestLink y registrando incidentes en Mantis para su resolución.',
     path: 'proyecto-final-tecnicatura',
@@ -268,11 +268,11 @@ export const informations: Info[] = [
   },
   {
     id: 2,
-    titulo: 'Proyecto 3er semestre',
+    title: 'Proyecto 3er semestre',
     resumen:
       'Diseño e implementación de infraestructura interconectando sedes universitarias a través de ISP, configuraciones como VLAN, ChannelGroup, Accesslist, etc. Junto a una aplicación de gestión de usuarios con JSP y JavaEE.',
     fecha: '2023',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/a7jiaectulhuoamondsk',
+    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/a7jiaectulhuoamondsk',
     descripcion:
       'Para este proyecto del tercer semestre, nos enfrentamos a un desafío doble: primero, diseñar y configurar la infraestructura de red de la Universidad Tecnológica y sus sedes utilizando herramientas como GNS3 para simular y planificar la conectividad. Esta etapa implicó abordar problemas como la distancia entre las sedes, la variedad de dispositivos y usuarios, y la necesidad de escalabilidad y eficiencia. Luego, nos sumergimos en la creación de una aplicación de gestión de usuarios, utilizando tecnologías como Server Pages, JavaEE y Oracle SQL Developer. Esta fase del proyecto nos permitió integrar las habilidades aprendidas en desarrollo y arquitectura de software, culminando en una solución integral que mejora la infraestructura y la gestión de la Universidad.',
     path: 'proyecto-final-3er-semestre',
@@ -289,11 +289,11 @@ export const informations: Info[] = [
   },
   {
     id: 3,
-    titulo: 'Proyecto 2do semestre',
+    title: 'Proyecto 2do semestre',
     fecha: '2023',
     resumen:
       'Desarrollo de una aplicación para gestionar constancias, creada con Java, SQL developer y WindowsBuilder. Este proyecto abarcaba lo que aprendimos en Programación, Base de datos y Testing.',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/a64a13u1w9w3npxeskux',
+    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/a64a13u1w9w3npxeskux',
     github:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
     descripcion:
@@ -306,14 +306,14 @@ export const informations: Info[] = [
   {
     id: 4,
     fecha: '2023',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/r3rrpcjayt0lvnrgd0x1',
+    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/r3rrpcjayt0lvnrgd0x1',
     resumen:
       'Desarrollé un editor de fotos que fue seleccionado como uno de los diez mejores proyectos en el hackathon organizado por MiduDev y Cloudinary, utilizando sus servicios para manipular imágenes.',
     drive:
       'https://drive.google.com/drive/folders/1eFYMjZ7Y69OsxracrwwUnUg7bRtNNsW1?usp=sharing',
-    link: 'https://buildimg.vercel.app/',
+    link: 'https://buildimage.vercel.app/',
     github: 'https://github.com/nicomelendez/image-app',
-    titulo: 'Hackathon Midudev - Cloudinary',
+    title: 'Hackathon Midudev - Cloudinary',
     descripcion:
       'Participé en la hackathon de una semana organizada por MiduDev, un streamer de Twitch, y Cloudinary, una empresa de servicios de imágenes en la nube. Durante este evento, tuve que utilizar los servicios de Cloudinary para crear una aplicación. Esta experiencia mejoró mi capacidad para crear soluciones innovadoras y eficientes en el desarrollo web.',
     path: 'hackathon-midudev-cloudinary',
@@ -323,11 +323,11 @@ export const informations: Info[] = [
   },
   {
     id: 5,
-    titulo: 'Reto Hornex - Impulsa Industria (CIU)',
+    title: 'Reto Hornex - Impulsa Industria (CIU)',
     fecha: '2022',
     resumen:
       'Aplicación de la metodología de Innovación Abierta para resolver un reto propuesto por la empresa Hornex, en el marco del programa Impulsa Industria organizado por la Cámara de Industrias del Uruguay (CIU).',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/ai53jxk9shih6c87era5',
+    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/ai53jxk9shih6c87era5',
     drive:
       'https://drive.google.com/file/d/1AbVWgJw6vo-cWhRUH3h-P5ReG9A5_J_W/view?usp=sharing',
     descripcion:
@@ -339,12 +339,12 @@ export const informations: Info[] = [
   },
   {
     id: 6,
-    titulo: 'NASA Space Apps Challenge',
+    title: 'NASA Space Apps Challenge',
     resumen:
       'Participé en el NASA Space Apps Challenge junto a un grupo de amigos, desarrollando una demo de un juego educativo que nos permitió clasificar a la fase global del hackathon.',
     fecha: '2021',
     link: 'https://2021.spaceappschallenge.org/challenges/statements/space-quest-the-game/teams/ctrl-y-1/project',
-    img: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/bdrdmkwlhbm7atkrxjfw',
+    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/bdrdmkwlhbm7atkrxjfw',
     drive: 'https://photos.app.goo.gl/qH8uRyVM8Hx7DNTz6',
     descripcion:
       "Durante tres días, trabaje junto a cuatro amigos en la creación de una demo de un juego educativo para el desafío 'Space Quest: The Game' del NASA Space Apps Challenge. Abordamos temas del espacio, diseñando una idea de juego interactivo que enseñara a los jugadores sobre el espacio. Esta experiencia nos permitió fortalecer nuestras habilidades blandas al colaborar en equipo y defender una idea.",
