@@ -178,7 +178,7 @@ export const proyects: Proyect[] = [
       'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con Buildimage ahora mismo!.',
     image:
       'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/ikrptdr7onkerlj9bcsg',
-    url: 'https://buildimage.vercel.app/',
+    url: 'https://buildimg.vercel.app/',
     repository: 'https://github.com/nicomelendez/image-app',
     online: true,
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.CLOUDINARY],
