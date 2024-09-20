@@ -1,14 +1,16 @@
 ---
 import Code from '@/components/icons/Code.astro'
-import ListProyects from '@/components/proyect/ListProyects.astro'
+import { proyects } from "@/lib/index.ts";
+import ListCard from '../card/ListCard.astro'
 ---
 
-<section id='proyectos' class='w-full py-10 bg-secondary px-5 md:px-10 '>
+<section id='proyectos' class='w-full py-10 bg-secondary px-5 md:px-24'>
   <h2
-    class='text-3xl font-bold sm:text-4xl text-fourth text-center py-10 flex items-center justify-center gap-x-2 sombra-low'
+    class='text-4xl xl:text-5xl font-bold sm:text-4xl text-fourth text-center py-10 flex items-center justify-center gap-x-2 sombra-low'
   >
-    <Code class='w-7 h-7 sm:w-9 sm:h-9' />
+    <Code class='w-7 h-7 sm:w-10 sm:h-10' />
     Proyectos
   </h2>
-  <ListProyects />
+
+  <ListCard list={proyects} type="proyects"/>
 </section>
