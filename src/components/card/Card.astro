@@ -29,7 +29,7 @@ const { title, image, resumen, tags } =
 
     <div class="absolute start-0 bottom-0"> 
         {Astro.props.type === 'proyects' && <ButtonsProyects online={Astro.props.item.online} repository={Astro.props.item.repository} url={Astro.props.item.url} view={true} />}
-        {Astro.props.type === 'info' && <div class="flex"> <a href={`/info/${Astro.props.item.path}`} class='flex items-center gap-x-2 font-medium rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md'> <InfoIcon /> Saber más </a> </div>}
+        {Astro.props.type === 'info' && <div class="flex"> <a href={`/${Astro.props.item.path}`} class='flex items-center gap-x-2 font-medium rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md'> <InfoIcon /> Saber más </a> </div>}
     </div>
 </article>
 <style>

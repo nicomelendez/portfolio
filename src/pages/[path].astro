@@ -1,12 +1,20 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { getInfo } from '@/lib/index.ts'
+import { getInfo, informations } from '@/lib/index.ts'
 import DriveIcon from '@/components/icons/Drive.astro'
 import WaveUp from '@/components/wave/WaveUp.astro'
 import WaveDown from '@/components/wave/WaveDown.astro'
 import BtnVisitar from '@/components/btn/BtnVisitar.astro'
 import BtnGithub from '@/components/btn/BtnGithub.astro'
 import BtnAtras from '@/components/btn/BtnAtras.astro'
+
+export function getStaticPaths() {
+  return informations.map(({path})=> {
+    return {params: {path: path}}
+  })
+}
+
+export const prerender = true
 
 const { path } = Astro.params
 
