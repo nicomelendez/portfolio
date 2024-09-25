@@ -163,7 +163,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Analiza un contexto específico, hace preguntas para refinarlo, mejora el contexto con las respuestas. Luego, busca información y genera una plantilla en Word para tareas universitarias o de secundaria.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/cuvkttpv68s7x2byvovk',
+      '/doc-ai.webp',
     url: 'https://doc-ai-free.vercel.app/',
     repository: 'https://github.com/nicomelendez/doc-ai',
     online: true,
@@ -177,7 +177,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con Buildimage ahora mismo!.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/ikrptdr7onkerlj9bcsg',
+      '/build-img.webp',
     url: 'https://buildimg.vercel.app/',
     repository: 'https://github.com/nicomelendez/image-app',
     online: true,
@@ -191,7 +191,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Portal académico que facilita la gestión de usuarios, eventos, constancias, reclamos y ITRs.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/lsbk9coc7mfic4sfejeh',
+      '/portal-utec.webp',
     url: '',
     repository: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     online: false,
@@ -205,7 +205,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Solicitud, modificación, listado y eliminado de reclamos del portal académico, diseñada para dispositivos móviles.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/oaqcmlhxnkal3hq3gy6t',
+      '/phone-utec.webp',
     url: '',
     repository:
       'https://github.com/nicomelendez/proyecto-de-tecnicatura-app-movil',
@@ -220,7 +220,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Una aplicación ideal para gestionar tus lecturas. Con una interfaz intuitiva, permite organizar tus libros, añadir reseñas y controlar su estado de lectura.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/ux6hvdqrkl9slpswsjue',
+      '/my-books.webp',
     url: 'https://mybooks-nu.vercel.app/',
     repository: 'https://github.com/nicomelendez/mybooks',
     online: true,
@@ -234,7 +234,7 @@ export const proyects: Proyect[] = [
     resumen:
       'Una solución completa para la gestión de usuarios, constancias, eventos y la generación de PDF. Simplifica los procesos administrativos.',
     image:
-      'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/loi6jqsic91xdojpo6z1',
+      '/gestion-constancias.webp',
     url: '',
     repository:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
@@ -250,7 +250,7 @@ export const informations: Info[] = [
     resumen:
       'Desarrollo e implementación de un producto completo que incluye una aplicación web y móvil, bases de datos operativa y corporativa, infraestructura de red simulada en GNS3, y un proceso de testing con herramientas como TestLink y Mantis.',
     fecha: '2024',
-    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/pages/v3/pyj9iz5z2u9sraln86u1',
+    image: '/proyecto-tec.webp',
     descripcion:
       'Este proyecto final abarcó el desarrollo de una aplicación web cliente/servidor donde la API y el cliente se ejecutaban en el mismo proyecto. La aplicación móvil, desarrollada en Kotlin, consumía la API de la aplicación web. La base de datos operativa fue creada con SQL Developer, y Power BI se utilizó para visualizar los datos en la base de datos corporativa. La infraestructura de red se simuló en GNS3, configurando una topología que interconectaba dos sedes universitarias mediante VPN y utilizando dos firewalls pfSense para establecer una DMZ en la sede central. El proceso de testing incluyó seis ciclos de pruebas, gestionando casos de prueba con TestLink y registrando incidentes en Mantis para su resolución.',
     path: 'proyecto-final-tecnicatura',
@@ -272,7 +272,7 @@ export const informations: Info[] = [
     resumen:
       'Diseño e implementación de infraestructura interconectando sedes universitarias a través de ISP, configuraciones como VLAN, ChannelGroup, Accesslist, etc. Junto a una aplicación de gestión de usuarios con JSP y JavaEE.',
     fecha: '2023',
-    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/a7jiaectulhuoamondsk',
+    image: '/pinfra.webp',
     descripcion:
       'Para este proyecto del tercer semestre, nos enfrentamos a un desafío doble: primero, diseñar y configurar la infraestructura de red de la Universidad Tecnológica y sus sedes utilizando herramientas como GNS3 para simular y planificar la conectividad. Esta etapa implicó abordar problemas como la distancia entre las sedes, la variedad de dispositivos y usuarios, y la necesidad de escalabilidad y eficiencia. Luego, nos sumergimos en la creación de una aplicación de gestión de usuarios, utilizando tecnologías como Server Pages, JavaEE y Oracle SQL Developer. Esta fase del proyecto nos permitió integrar las habilidades aprendidas en desarrollo y arquitectura de software, culminando en una solución integral que mejora la infraestructura y la gestión de la Universidad.',
     path: 'proyecto-final-3er-semestre',
@@ -293,7 +293,7 @@ export const informations: Info[] = [
     fecha: '2023',
     resumen:
       'Desarrollo de una aplicación para gestionar constancias, creada con Java, SQL developer y WindowsBuilder. Este proyecto abarcaba lo que aprendimos en Programación, Base de datos y Testing.',
-    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/a64a13u1w9w3npxeskux',
+    image: '/pdt.webp',
     github:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
     descripcion:
@@ -306,7 +306,7 @@ export const informations: Info[] = [
   {
     id: 4,
     fecha: '2023',
-    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/r3rrpcjayt0lvnrgd0x1',
+    image: '/cloudinary.webp',
     resumen:
       'Desarrollé un editor de fotos que fue seleccionado como uno de los diez mejores proyectos en el hackathon organizado por MiduDev y Cloudinary, utilizando sus servicios para manipular imágenes.',
     drive:
@@ -327,7 +327,7 @@ export const informations: Info[] = [
     fecha: '2022',
     resumen:
       'Aplicación de la metodología de Innovación Abierta para resolver un reto propuesto por la empresa Hornex, en el marco del programa Impulsa Industria organizado por la Cámara de Industrias del Uruguay (CIU).',
-    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/ai53jxk9shih6c87era5',
+    image: '/hornex.webp',
     drive:
       'https://drive.google.com/file/d/1AbVWgJw6vo-cWhRUH3h-P5ReG9A5_J_W/view?usp=sharing',
     descripcion:
@@ -344,7 +344,7 @@ export const informations: Info[] = [
       'Participé en el NASA Space Apps Challenge junto a un grupo de amigos, desarrollando una demo de un juego educativo que nos permitió clasificar a la fase global del hackathon.',
     fecha: '2021',
     link: 'https://2021.spaceappschallenge.org/challenges/statements/space-quest-the-game/teams/ctrl-y-1/project',
-    image: 'https://res.cloudinary.com/djslvlh8h/image/upload/f_auto,q_auto/v1/portafolio/info/bdrdmkwlhbm7atkrxjfw',
+    image: '/nasa.webp',
     drive: 'https://photos.app.goo.gl/qH8uRyVM8Hx7DNTz6',
     descripcion:
       "Durante tres días, trabaje junto a cuatro amigos en la creación de una demo de un juego educativo para el desafío 'Space Quest: The Game' del NASA Space Apps Challenge. Abordamos temas del espacio, diseñando una idea de juego interactivo que enseñara a los jugadores sobre el espacio. Esta experiencia nos permitió fortalecer nuestras habilidades blandas al colaborar en equipo y defender una idea.",
