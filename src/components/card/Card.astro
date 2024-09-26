@@ -10,12 +10,18 @@ const { title, image, resumen, tags } =
 
 <article class="space-y-5 relative w-full h-full mb-8">
     <picture class="rounded-[10px] sombra">
-        <img
+       {Astro.props.type === 'info' ? ( <img
+       loading="lazy"
+       class="w-full aspect-video object-cover rounded-[10px]"
+       src={image}
+       transition:name={`card-${Astro.props.item.path}`}
+       alt={`Imagen de la web ${title}`}
+       />) : ( <img
         loading="lazy"
         class="w-full aspect-video object-cover rounded-[10px]"
         src={image}
         alt={`Imagen de la web ${title}`}
-        />
+        />)}
     </picture>
  
     <ListBadget badget={tags}/>   

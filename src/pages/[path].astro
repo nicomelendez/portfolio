@@ -85,6 +85,7 @@ const { title, image, link, github, drive, descripcion, aprendisaje, tags } = in
         <img
           class='w-full xl:max-w-[500px] xlbig:max-w-[700px] object-cover rounded-lg shadow-lg'
           src={image}
+          transition:name={`card-${path}`}
           alt={`Imagen de ${title}`}
         />
       </picture>
