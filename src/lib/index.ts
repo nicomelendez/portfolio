@@ -57,6 +57,7 @@ export const contacts: any[] = [
     color: '#0077B5',
   },
 ]
+
 export function getInfo(path: string) {
   return informations.find((info) => info.path === path)
 }
