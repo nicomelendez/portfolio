@@ -330,7 +330,7 @@ export const informations: Info[] = [
       'Aplicación de la metodología de Innovación Abierta para resolver un reto propuesto por la empresa Hornex, en el marco del programa Impulsa Industria organizado por la Cámara de Industrias del Uruguay (CIU).',
     image: '/hornex.webp',
     drive:
-      'https://drive.google.com/file/d/1AbVWgJw6vo-cWhRUH3h-P5ReG9A5_J_W/view?usp=sharing',
+      'https://drive.google.com/file/d/1S0RYm28629SxOoHB2xNx9FKgPs8QIZm8/view?usp=sharing',
     descripcion:
       'Participé en el Reto Hornex, donde nos enfrentamos al desafío de crear una sugerencia para que la empresa Hornex. Utilizamos la metodología de Innovación Abierta para identificar y resolver este problema, lo que nos permitió fortalecer nuestras habilidades blandas y contribuir al desarrollo de propuestas innovadoras que beneficiaron tanto a la empresa como a nosotros como participantes.',
     path: 'reto-hornex',
