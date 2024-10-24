@@ -312,7 +312,7 @@ export const informations: Info[] = [
       'Desarrollé un editor de fotos que fue seleccionado como uno de los diez mejores proyectos en el hackathon organizado por MiduDev y Cloudinary, utilizando sus servicios para manipular imágenes.',
     drive:
       'https://drive.google.com/drive/folders/1eFYMjZ7Y69OsxracrwwUnUg7bRtNNsW1?usp=sharing',
-    link: 'https://buildimage.vercel.app/',
+    link: 'https://buildimg.vercel.app/',
     github: 'https://github.com/nicomelendez/image-app',
     title: 'Hackathon Midudev - Cloudinary',
     descripcion:
