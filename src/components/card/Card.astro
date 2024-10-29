@@ -1,42 +1,69 @@
 ---
-import InfoIcon from "../icons/InfoIcon.astro";
-import ButtonsProyects from "../btn/ButtonsProyects.astro";
-import ListBadget from "./ListBadget.astro";
+import InfoIcon from '../icons/InfoIcon.astro'
+import ButtonsProyects from '../btn/ButtonsProyects.astro'
+import ListBadget from './ListBadget.astro'
 
-const { title, image, resumen, tags } =
-  Astro.props.item;
-  const {type} = Astro.props
---- 
+const { title, image, resumen, tags } = Astro.props.item
+const { type } = Astro.props
+---
 
-<article class="space-y-5 relative w-full h-full mb-8">
-    <picture class="rounded-[10px] sombra">
-       {Astro.props.type === 'info' ? ( <img
-       loading="lazy"
-       class="w-full aspect-video object-cover rounded-[10px]"
-       src={image}
-       transition:name={`card-${Astro.props.item.path}`}
-       alt={`Imagen de la web ${title}`}
-       />) : ( <img
-        loading="lazy"
-        class="w-full aspect-video object-cover rounded-[10px]"
-        src={image}
-        alt={`Imagen de la web ${title}`}
-        />)}
-    </picture>
- 
-    <ListBadget badget={tags}/>   
+<article class='space-y-5 relative w-full h-full mb-8'>
+  <picture class='rounded-[10px] sombra'>
+    {
+      Astro.props.type === 'info' ? (
+        <img
+          loading='lazy'
+          class='w-full aspect-video object-cover rounded-[10px]'
+          src={image}
+          transition:name={`card-${Astro.props.item.path}`}
+          alt={`Imagen de la web ${title}`}
+        />
+      ) : (
+        <img
+          loading='lazy'
+          class='w-full aspect-video object-cover rounded-[10px]'
+          src={image}
+          alt={`Imagen de la web ${title}`}
+        />
+      )
+    }
+  </picture>
 
-    <div class={`${type === 'info' ? 'pb-8' : 'pb-5'} flex flex-col gap-y-2`}>
-        <h3 class="text-xl xl:text-2xl font-bold text-tertiary sombra-low">
-        {title}
-        </h3>
-        <p class="block text-sm text-gray-700 text-pretty">{resumen}</p>
-    </div>
+  <ListBadget badget={tags} />
 
-    <div class="absolute start-0 bottom-0"> 
-        {Astro.props.type === 'proyects' && <ButtonsProyects online={Astro.props.item.online} repository={Astro.props.item.repository} url={Astro.props.item.url} view={true} />}
-        {Astro.props.type === 'info' && <div class="flex"> <a href={`/${Astro.props.item.path}`} class='flex items-center gap-x-2 font-medium rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md'> <InfoIcon /> Saber más </a> </div>}
-    </div>
+  <div class={`${type === 'info' ? 'pb-8' : 'pb-5'} flex flex-col gap-y-2`}>
+    <h3 class='text-xl xl:text-2xl font-bold text-tertiary sombra-low'>
+      {title}
+    </h3>
+    <p class='block text-sm text-gray-700 text-pretty'>{resumen}</p>
+  </div>
+
+  <div class='absolute start-0 bottom-0'>
+    {
+      Astro.props.type === 'proyects' && (
+        <ButtonsProyects
+          online={Astro.props.item.online}
+          repository={Astro.props.item.repository}
+          url={Astro.props.item.url}
+          view={true}
+        />
+      )
+    }
+    {
+      Astro.props.type === 'info' && (
+        <div class='flex'>
+          {' '}
+          <a
+            href={`/${Astro.props.item.path}`}
+            class='flex items-center gap-x-2 font-medium rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md'
+          >
+            {' '}
+            <InfoIcon /> Saber más{' '}
+          </a>{' '}
+        </div>
+      )
+    }
+  </div>
 </article>
 <style>
   .sombra {
