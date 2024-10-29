@@ -157,14 +157,26 @@ const TAGS = {
 
 export const proyects: Proyect[] = [
   {
+    id: 22,
+    title: 'Spookify',
+    description:
+      'Proporciona la información sobre un tema y obtén un documento Word para seguir editando.',
+    resumen:
+      'Transforma tus fotos y videos con Spookify y crea efectos aterradores usando IA y Cloudinary. ¡Dale un toque espeluznante a tus creaciones!',
+    image: '/spookify.webp',
+    url: 'https://spookify-ai.vercel.app/',
+    repository: 'https://github.com/ValeHernandezz/spookify',
+    online: true,
+    tags: [TAGS.NEXT, TAGS.CLOUDINARY, TAGS.TAILWIND],
+  },
+  {
     id: 1,
     title: 'Doc AI',
     description:
       'Proporciona la información sobre un tema y obtén un documento Word para seguir editando.',
     resumen:
       'Analiza un contexto específico, hace preguntas para refinarlo, mejora el contexto con las respuestas. Luego, busca información y genera una plantilla en Word para tareas universitarias o de secundaria.',
-    image:
-      '/doc-ai.webp',
+    image: '/doc-ai.webp',
     url: 'https://doc-ai-free.vercel.app/',
     repository: 'https://github.com/nicomelendez/doc-ai',
     online: true,
@@ -177,8 +189,7 @@ export const proyects: Proyect[] = [
       'Buildimage es un potente editor de imágenes desarrollado con Next.js y aprovechando la potencia de Cloudinary.',
     resumen:
       'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con Buildimage ahora mismo!.',
-    image:
-      '/build-img.webp',
+    image: '/build-img.webp',
     url: 'https://buildimg.vercel.app',
     repository: 'https://github.com/nicomelendez/image-app',
     online: true,
@@ -191,8 +202,7 @@ export const proyects: Proyect[] = [
       'Portal académico para UTEC que facilita la gestión de diversas actividades y registros.',
     resumen:
       'Portal académico que facilita la gestión de usuarios, eventos, constancias, reclamos y ITRs.',
-    image:
-      '/portal-utec.webp',
+    image: '/portal-utec.webp',
     url: '',
     repository: 'https://github.com/nicomelendez/proyecto-de-tecnicatura',
     online: false,
@@ -205,8 +215,7 @@ export const proyects: Proyect[] = [
       'Aplicación móvil en Kotlin para gestionar reclamos en la UTEC.',
     resumen:
       'Solicitud, modificación, listado y eliminado de reclamos del portal académico, diseñada para dispositivos móviles.',
-    image:
-      '/phone-utec.webp',
+    image: '/phone-utec.webp',
     url: '',
     repository:
       'https://github.com/nicomelendez/proyecto-de-tecnicatura-app-movil',
@@ -220,28 +229,26 @@ export const proyects: Proyect[] = [
       'Aplicación con Nextjs y Tawlind, para la gestión de los libros que estas leyendo y controlar su estado.',
     resumen:
       'Una aplicación ideal para gestionar tus lecturas. Con una interfaz intuitiva, permite organizar tus libros, añadir reseñas y controlar su estado de lectura.',
-    image:
-      '/my-books.webp',
+    image: '/my-books.webp',
     url: 'https://mybooks-nu.vercel.app/',
     repository: 'https://github.com/nicomelendez/mybooks',
     online: true,
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
   },
-  {
+/*   {
     id: 6,
     title: 'Gestión de constancias UTEC',
     description:
       'Aplicación con windowsBuilder y Java, aplicación de windows con gestión de usuarios, constancias, eventos y generador de pdf.',
     resumen:
       'Una solución completa para la gestión de usuarios, constancias, eventos y la generación de PDF. Simplifica los procesos administrativos.',
-    image:
-      '/gestion-constancias.webp',
+    image: '/gestion-constancias.webp',
     url: '',
     repository:
       'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
     online: false,
     tags: [TAGS.JAVAEE, TAGS.SQL, TAGS.WILDFLY],
-  },
+  }, */
 ]
 
 export const informations: Info[] = [
@@ -302,7 +309,13 @@ export const informations: Info[] = [
     path: 'proyecto-final-2do-semestre',
     aprendisaje:
       'Durante el segundo semestre, este proyecto me brindó experiencia en los fundamentos de programación, base de datos y testing. Las materias cursadas junto con el desarrollo del proyecto me permitieron comprender y vivir todo el ciclo de desarrollo de una aplicación. Desde la generación de casos de uso hasta la creación de casos de prueba, abordamos todos los aspectos necesarios para desarrollar una aplicación completa. Diseñamos la base de datos, desarrollamos tanto el cliente como el servidor, y realizamos pruebas que fueron registradas en TestLink y reportadas en Mantis. Esta experiencia práctica consolidó mi comprensión de los principios fundamentales y me preparó para futuros desafíos.',
-    tags: [TAGS.PROGRAMMING, TAGS.DATABASE, TAGS.TESTING, TAGS.TEAMWORK, TAGS.COMMUNICATION,],
+    tags: [
+      TAGS.PROGRAMMING,
+      TAGS.DATABASE,
+      TAGS.TESTING,
+      TAGS.TEAMWORK,
+      TAGS.COMMUNICATION,
+    ],
   },
   {
     id: 4,
