@@ -210,7 +210,7 @@ export const proyects: Proyect[] = [
   },
   {
     id: 3,
-    title: 'Portal académico UTEC - Aplicación móvil',
+    title: 'Portal académico UTEC - App móvil',
     description:
       'Aplicación móvil en Kotlin para gestionar reclamos en la UTEC.',
     resumen:
