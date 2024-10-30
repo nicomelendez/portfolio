@@ -184,11 +184,11 @@ export const proyects: Proyect[] = [
   },
   {
     id: 2,
-    title: 'Buildimage',
+    title: 'BuildIMG',
     description:
-      'Buildimage es un potente editor de imágenes desarrollado con Next.js y aprovechando la potencia de Cloudinary.',
+      'BuildIMG es un potente editor de imágenes desarrollado con Next.js y aprovechando la potencia de Cloudinary.',
     resumen:
-      'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con Buildimage ahora mismo!.',
+      'Descubre nuevas posibilidades y transforma tus fotos de manera fácil y rápida. ¡Explora las posibilidades creativas con BuildIMG ahora mismo!.',
     image: '/build-img.webp',
     url: 'https://buildimg.vercel.app',
     repository: 'https://github.com/nicomelendez/image-app',
