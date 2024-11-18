@@ -21,6 +21,8 @@ import Programmer from '@/components/icons/Programmer.astro'
 import Bug from '@/components/icons/Bug.astro'
 import Talk from '@/components/icons/Talk.astro'
 import Teamwork from '@/components/icons/Teamwork.astro'
+import IOT from '@/components/icons/IOT.astro'
+import Blub from '@/components/icons/Blub.astro'
 
 export const navs = [
   {
@@ -153,6 +155,16 @@ const TAGS = {
     class: 'bg-[#1e90ff]/70 text-white',
     icon: Teamwork,
   },
+  IOT: {
+    name: 'IoT',
+    class: 'bg-[#00BFFF]/70 text-white',
+    icon: IOT,
+  },
+  INNOVATION: {
+    name: 'Innovación',
+    class: 'bg-[#FF6347]/70 text-white',
+    icon: Blub,
+  },
 }
 
 export const proyects: Proyect[] = [
@@ -235,7 +247,7 @@ export const proyects: Proyect[] = [
     online: true,
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
   },
-/*   {
+  /*   {
     id: 6,
     title: 'Gestión de constancias UTEC',
     description:
@@ -252,6 +264,27 @@ export const proyects: Proyect[] = [
 ]
 
 export const informations: Info[] = [
+  {
+    id: 3,
+    title: 'Hackathon Weekend 3.0',
+    fecha: '2024',
+    resumen:
+      'Diseñamos inSinia, una propuesta innovadora para romper barreras de comunicación de personas sordas, integrando ideas como reconocimiento de señas, avatares 3D y un modelo de monetización escalable. Este sistema busca fomentar la inclusión social mediante soluciones tecnológicas accesibles y sostenibles.',
+    image: '/weekend.webp',
+    link: 'https://www.youtube.com/watch?v=f7zRQla1qaI&t=3163s',
+    descripcion:
+      'Durante el Hackathon Weekend 3.0, organizado por INGENIO Incubadora con apoyo de UTEC, diseñamos inSinia, un sistema que elimina barreras de comunicación para personas sordas. La propuesta incluyó la documentación detallada del funcionamiento, un modelo de monetización y un roadmap de desarrollo. Este proyecto destacó por su enfoque inclusivo y escalable, utilizando ideas innovadoras como reconocimiento de señas y avatares 3D.',
+    path: 'weekend',
+    aprendisaje:
+      'Aprendí a trabajar bajo presión en un entorno de colaboración intensa, desarrollando habilidades para estructurar ideas, presentar soluciones innovadoras y defenderlas frente a un jurado. Esta experiencia me permitió entender la importancia de la documentación clara y del diseño estratégico para abordar problemáticas.',
+    tags: [
+      TAGS.HACKATHON,
+      TAGS.TEAMWORK,
+      TAGS.COMMUNICATION,
+      TAGS.IOT,
+      TAGS.INNOVATION,
+    ],
+  },
   {
     id: 1,
     title: 'Proyecto Final de Tecnicatura',
@@ -276,7 +309,7 @@ export const informations: Info[] = [
   },
   {
     id: 2,
-    title: 'Proyecto 3er semestre',
+    title: 'Proyecto Infraestructura',
     resumen:
       'Diseño e implementación de infraestructura interconectando sedes universitarias a través de ISP, configuraciones como VLAN, ChannelGroup, Accesslist, etc. Junto a una aplicación de gestión de usuarios con JSP y JavaEE.',
     fecha: '2023',
@@ -288,28 +321,6 @@ export const informations: Info[] = [
       'Durante el transcurso del tercer semestre y la ejecución del proyecto final, adquirí conocimientos en los fundamentos de infraestructura, incluyendo la conectividad de dispositivos y sus comunicaciones, así como la implementación de conceptos clave como el protocolo OSPF, access-lists, VLANs, channel groups y DHCP. Además, exploré tecnologías como JSP, Oracle y JWT, lo que amplió mi comprensión en el desarrollo de aplicaciones web y la gestión de bases de datos, brindándome una base para enfrentar desafíos futuros.',
     tags: [
       TAGS.INFRASTRUCTURE,
-      TAGS.PROGRAMMING,
-      TAGS.DATABASE,
-      TAGS.TESTING,
-      TAGS.TEAMWORK,
-      TAGS.COMMUNICATION,
-    ],
-  },
-  {
-    id: 3,
-    title: 'Proyecto 2do semestre',
-    fecha: '2023',
-    resumen:
-      'Desarrollo de una aplicación para gestionar constancias, creada con Java, SQL developer y WindowsBuilder. Este proyecto abarcaba lo que aprendimos en Programación, Base de datos y Testing.',
-    image: '/pdt.webp',
-    github:
-      'https://github.com/nicomelendez/Gestion-de-constancias-UTEC-cliente',
-    descripcion:
-      'Entrega del proyecto final del segundo semestre: una aplicación de gestión de constancias desarrollada para abordar la creciente necesidad de centralizar y organizar las solicitudes de constancias emitidas por la secretaría de la Licenciatura en Tecnologías de la Información (LTI). Este proyecto se enfocó en desarrollar un sistema que permitiera la gestión centralizada de las solicitudes, la generación de informes y la asignación de tutores a eventos específicos, cumpliendo con los requerimientos funcionales establecidos para los módulos de gestión de usuarios, constancias y análisis de reportes.',
-    path: 'proyecto-final-2do-semestre',
-    aprendisaje:
-      'Durante el segundo semestre, este proyecto me brindó experiencia en los fundamentos de programación, base de datos y testing. Las materias cursadas junto con el desarrollo del proyecto me permitieron comprender y vivir todo el ciclo de desarrollo de una aplicación. Desde la generación de casos de uso hasta la creación de casos de prueba, abordamos todos los aspectos necesarios para desarrollar una aplicación completa. Diseñamos la base de datos, desarrollamos tanto el cliente como el servidor, y realizamos pruebas que fueron registradas en TestLink y reportadas en Mantis. Esta experiencia práctica consolidó mi comprensión de los principios fundamentales y me preparó para futuros desafíos.',
-    tags: [
       TAGS.PROGRAMMING,
       TAGS.DATABASE,
       TAGS.TESTING,
