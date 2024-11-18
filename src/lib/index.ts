@@ -269,7 +269,7 @@ export const informations: Info[] = [
     title: 'Hackathon Weekend 3.0',
     fecha: '2024',
     resumen:
-      'Diseñamos inSinia, una propuesta innovadora para romper barreras de comunicación de personas sordas, integrando ideas como reconocimiento de señas, avatares 3D y un modelo de monetización escalable. Este sistema busca fomentar la inclusión social mediante soluciones tecnológicas accesibles y sostenibles.',
+      'Diseñamos inSinia, una propuesta innovadora para romper barreras de comunicación de personas sordas, integrando ideas como reconocimiento de señas, avatares 3D y un modelo de monetización escalable.re',
     image: '/weekend.webp',
     link: 'https://www.youtube.com/watch?v=f7zRQla1qaI&t=3163s',
     descripcion:
