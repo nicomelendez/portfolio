@@ -3,15 +3,9 @@ import InfoIcon from '@/components/icons/InfoIcon.astro'
 import Diploma from '../icons/Diploma.astro'
 ---
 
-<h3 class='text-xl xl:text-2xl mt-6 font-bold gradient-text sombra-low'>Estudios</h3>
-
-<p class='text-gray-900 text-pretty'>
-  <strong>Técnico Superior en Informática</strong> y actualmente curso el <strong>quinto semestre</strong> de <strong>Licenciatura en Tecnologías de la Información</strong> en la <strong>Universidad Tecnológica del Uruguay</strong>. 
-</p>
-<p class='text-gray-900 pb-3 text-pretty'>
-  Durante estos semestres, he adquirido conocimientos en <strong>programación, bases de datos, infraestructura y testing</strong>. La participación en <strong>proyectos grupales</strong> ha fortalecido mis <strong>habilidades blandas</strong>, contribuyendo a mi <strong>crecimiento personal</strong>.
-</p>
-
+<h3 class='text-xl xl:text-2xl mt-6 font-bold gradient-text sombra-low'>
+  Estudios
+</h3>
 
 <div class='space-y-4 bg-white rounded-lg sombra max-w-[1300px] mb-2'>
   <details class='group [&_summary::-webkit-details-marker]:hidden' open>
@@ -42,13 +36,13 @@ import Diploma from '../icons/Diploma.astro'
             class='inline-flex mx-auto items-center justify-center rounded-full bg-blue-100 px-3 py-1 text-blue-700'
           >
             <p class='whitespace-nowrap text-[10px] md:text-sm font-semibold'>
-              2022 - actualmente
+              2024 - actualmente
             </p>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
-              stroke-width={2}
+              stroke-width='2'
               stroke='currentColor'
               class='w-4 h-4 ml-2'
             >
@@ -109,6 +103,101 @@ import Diploma from '../icons/Diploma.astro'
     </div>
   </details>
 </div>
+<div class='space-y-4 bg-white rounded-lg sombra max-w-[1300px]'>
+  <details class='group [&_summary::-webkit-details-marker]:hidden'>
+    <summary
+      class='flex flex-col sm:flex-row cursor-pointer items-center justify-between gap-y-3 sm:gap-y-0 rounded-lg bg-white p-4 text-gray-900'
+    >
+      <h2
+        class='flex items-center gap-2 font-bold text-sm md:text-base text-center sm:text-left hover:underline'
+      >
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke-width='2'
+          stroke='currentColor'
+          class='w-4 h-4 font-black hidden md:flex'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            d='M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'></path>
+        </svg>
+        Técnico Superior Universitario en Tecnologías de la Información
+      </h2>
+      <div class='flex items-center gap-x-4'>
+        <div class='flex items-center shadow-sm rounded-full'>
+          <span
+            class='inline-flex items-center justify-start rounded-full bg-emerald-100 px-3 py-1 text-emerald-700'
+          >
+            <p class='whitespace-nowrap text-[10px] md:text-sm font-semibold'>
+              2022 - 2024
+            </p>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke-width='2'
+              stroke='currentColor'
+              class='w-4 h-4 ml-2'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+              ></path>
+            </svg>
+          </span>
+        </div>
+        <svg
+          class='h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180'
+          xmlns='http://www.w3.org/2000/svg'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke='currentColor'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M19 9l-7 7-7-7'></path>
+        </svg>
+      </div>
+    </summary>
+    <p class='mt-4 px-4 leading-relaxed text-black text-sm md:text-base'>
+      Al concluir mi pregrado en Tecnologías de la Información, he adquirido una
+      formación y práctica en áreas como la programación, bases de datos,
+      testing e infraestructura. A través de proyectos grupales, no solo
+      desarrollé habilidades técnicas, sino también habilidades blandas como la
+      comunicación y el trabajo en equipo, preparándome para aplicar estos
+      conocimientos de manera efectiva en el ámbito profesional.
+    </p>
+    <div
+      class='px-4 pt-4 pb-5 flex items-center justify-center sm:justify-start gap-x-4'
+    >
+      <a
+        target='_blank'
+        href='https://drive.google.com/file/d/1oHDkBt1Uvn2eQ5ACQ9hJwyvnerRqGzSu/view?usp=sharing'
+        rel='noopener noreferrer'
+        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+      >
+        <Diploma class='text-white size-4' />
+        Diploma
+      </a>
+      <a
+        target='_blank'
+        href='https://drive.google.com/file/d/1-RtBgJ1DTJWPLar14czRXWVDB1o5mb3O/view?usp=sharing'
+        rel='noopener noreferrer'
+        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+      >
+        <InfoIcon />
+        Competencias
+      </a>
+    </div>
+  </details>
+</div>
+
 <div class='space-y-4 bg-white rounded-lg sombra max-w-[1300px]'>
   <details class='group [&_summary::-webkit-details-marker]:hidden'>
     <summary
