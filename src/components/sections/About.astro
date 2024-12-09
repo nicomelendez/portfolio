@@ -1,28 +1,29 @@
 ---
-import ProfessionalProfile from "@/components/info/ProfessionalProfile.astro";
-import Studies from "@/components/info/Studies.astro";
-import User from "@/components/icons/User.astro";
+import ProfessionalProfile from '@/components/info/ProfessionalProfile.astro'
+import Studies from '@/components/info/Studies.astro'
+import User from '@/components/icons/User.astro'
+import Experience from '@/components/info/Experience.astro'
 ---
 
 <section
-  id="sobre-mi"
-  class="bg-primary flex flex-col gap-y-4 px-5 md:px-24 pb-14"
+  id='sobre-mi'
+  class='bg-primary flex flex-col gap-y-4 px-5 md:px-24 pb-14'
 >
   <h2
-    class="text-4xl xl:text-5xl font-bold sm:text-4xl text-fourth text-center py-10 flex items-center justify-center gap-x-2 sombra-low"
+    class='text-4xl xl:text-5xl font-bold sm:text-4xl text-fourth text-center py-10 flex items-center justify-center gap-x-2 sombra-low'
   >
-    <User class="w-7 h-7 sm:w-10 sm:h-10" />
+    <User class='w-7 h-7 sm:w-10 sm:h-10' />
     Sobre mí
   </h2>
 
-    <div class="flex flex-col gap-y-4 max-w-[950px] mx-auto text-pretty">
-      <h3 class="text-xl xl:text-2xl mt-6 font-bold gradient-text sombra-low">
-        Perfil Profesional
-      </h3>
-      <ProfessionalProfile />
-      <Studies />
-    </div>
-
+  <div class='flex flex-col gap-y-4 max-w-[950px] mx-auto text-pretty'>
+    <ProfessionalProfile />
+    <h3 class='text-xl xl:text-2xl mt-8 font-bold gradient-text sombra-low'>
+      Experiencia
+    </h3>
+    <Experience />
+    <Studies />
+  </div>
 </section>
 
 <style>

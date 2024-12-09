@@ -36,7 +36,7 @@ import Diploma from '../icons/Diploma.astro'
             class='inline-flex mx-auto items-center justify-center rounded-full bg-blue-100 px-3 py-1 text-blue-700'
           >
             <p class='whitespace-nowrap text-[10px] md:text-sm font-semibold'>
-              2024 - actualmente
+              2024 - Actualmente
             </p>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -87,7 +87,7 @@ import Diploma from '../icons/Diploma.astro'
         target='_blank'
         href='https://drive.google.com/file/d/11CT8f6SIMXFVSmazq55or1KwG7BXMJQw/view?usp=sharing'
         rel='noopener noreferrer'
-        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+        class='btn-primary text-xs md:text-sm'
       >
         <Diploma class='text-white size-4' />
         Escolaridad
@@ -95,7 +95,7 @@ import Diploma from '../icons/Diploma.astro'
       <a
         target='_blank'
         href='https://utec.edu.uy/es/educacion/carrera/licenciatura-en-tecnologias-de-la-informacion/'
-        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+        class='btn-secondary text-xs md:text-sm'
       >
         <InfoIcon />
         Saber más
@@ -180,7 +180,7 @@ import Diploma from '../icons/Diploma.astro'
         target='_blank'
         href='https://drive.google.com/file/d/1oHDkBt1Uvn2eQ5ACQ9hJwyvnerRqGzSu/view?usp=sharing'
         rel='noopener noreferrer'
-        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+        class='btn-primary text-xs md:text-sm'
       >
         <Diploma class='text-white size-4' />
         Diploma
@@ -189,7 +189,7 @@ import Diploma from '../icons/Diploma.astro'
         target='_blank'
         href='https://drive.google.com/file/d/1-RtBgJ1DTJWPLar14czRXWVDB1o5mb3O/view?usp=sharing'
         rel='noopener noreferrer'
-        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+        class='btn-secondary text-xs md:text-sm'
       >
         <InfoIcon />
         Competencias
@@ -275,7 +275,7 @@ import Diploma from '../icons/Diploma.astro'
         target='_blank'
         href='https://drive.google.com/drive/folders/1sDVpkB6UduxFFc7ftEN2oEaMJTs3Ts4U?usp=sharing'
         rel='noopener noreferrer'
-        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+        class='btn-primary text-xs md:text-sm'
       >
         <Diploma class='text-white size-4' />
         Diploma
@@ -284,7 +284,7 @@ import Diploma from '../icons/Diploma.astro'
         target='_blank'
         href='https://planeamientoeducativo.utu.edu.uy/sites/cursos.utu.edu.uy/oferta-educativa/2005/2004/TICUR/049/EMT%20Informatica%20reformulacion.htm'
         rel='noopener noreferrer'
-        class='flex items-center gap-x-2 bg-sky-500 hover:bg-sky-400 text-xs md:text-sm text-white py-2 px-3 rounded-lg shadow-md cursor-pointer font-semibold'
+        class='btn-secondary text-xs md:text-sm'
       >
         <InfoIcon />
         Saber más
@@ -293,7 +293,37 @@ import Diploma from '../icons/Diploma.astro'
   </details>
 </div>
 <style>
-  strong {
-    color: #111827;
+  .btn-primary {
+    background-color: var(--color-fourth);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+  }
+
+  .btn-primary:hover {
+    background-color: #0aa452;
+  }
+
+  .btn-secondary {
+    background-color: var(--color-tertiary);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+  }
+
+  .btn-secondary:hover {
+    background-color: #3a6b94;
   }
 </style>
