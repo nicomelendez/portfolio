@@ -4,55 +4,61 @@ import ButtonsProyects from '../btn/ButtonsProyects.astro'
 import ListBadget from './ListBadget.astro'
 
 const { title, image, resumen, tags } = Astro.props.item
-const { type } = Astro.props
+const { type, item } = Astro.props
+
+const isInfo = type === 'info' ? true : false
+const url = isInfo ? item.path : item.url
+
 ---
 
-<article class='space-y-5 relative w-full h-full mb-8'>
-  <picture class='rounded-[10px] sombra'>
-    {
-      Astro.props.type === 'info' ? (
-        <div class='relative'>
+<article class='space-y-5 relative w-full h-full mb-8 cursor-pointer'>
+  <a href={`${url}`} class='block space-y-5 overflow-hidden'>
+    <picture class='rounded-[10px] sombra'>
+      {
+        isInfo ? (
+          <div class='relative overflow-hidden'>
+            <img
+              loading='lazy'
+              class='w-full aspect-video object-cover rounded-[10px] transform transition-transform'
+              src={image}
+              transition:name={`card-${Astro.props.item.path}`}
+              alt={`Imagen de la web ${title}`}
+            />
+            <div class='absolute bottom-5 right-5 sombra'>
+              <span class='inline-flex items-center justify-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-emerald-700'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  class='-ms-1 me-1.5 size-4'
+                >
+                  <i>
+                    <path d='M0 0h24v24H0z' stroke='none' />
+                    <path d='M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 1 1-2-2H6a2 2 0 0 1-2-2V7zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005' />
+                  </i>
+                </svg>
+                <p class='whitespace-nowrap text-sm mt-1'>
+                  {' '}
+                  {Astro.props.item?.fecha}
+                </p>
+              </span>
+            </div>
+          </div>
+        ) : (
           <img
             loading='lazy'
-            class='w-full aspect-video object-cover rounded-[10px]'
+            class='w-full aspect-video object-cover rounded-[10px] transform transition-transform'
             src={image}
-            transition:name={`card-${Astro.props.item.path}`}
             alt={`Imagen de la web ${title}`}
           />
-          <div class='absolute bottom-5 right-5 sombra'>
-            <span class='inline-flex items-center justify-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-emerald-700'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='currentColor'
-                stroke-width='2'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                class='-ms-1 me-1.5 size-4'
-              >
-                <>
-                  <path d='M0 0h24v24H0z' stroke='none' />
-                  <path d='M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7zM16 3v4M8 3v4M4 11h16M7 14h.013M10.01 14h.005M13.01 14h.005M16.015 14h.005M13.015 17h.005M7.01 17h.005M10.01 17h.005' />
-                </>
-              </svg>
-              <p class='whitespace-nowrap text-sm mt-1'>
-                {' '}
-                {Astro.props.item?.fecha}
-              </p>
-            </span>
-          </div>
-        </div>
-      ) : (
-        <img
-          loading='lazy'
-          class='w-full aspect-video object-cover rounded-[10px]'
-          src={image}
-          alt={`Imagen de la web ${title}`}
-        />
-      )
-    }
-  </picture>
+        )
+      }
+    </picture>
+  </a>
 
   <ListBadget badget={tags} />
 
@@ -65,7 +71,17 @@ const { type } = Astro.props
 
   <div class='absolute start-0 bottom-0'>
     {
-      Astro.props.type === 'proyects' && (
+      isInfo ? (
+        <div class='flex'>
+          <a
+            href={`/${Astro.props.item.path}`}
+            class='flex items-center gap-x-2 font-medium rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md'
+          >
+            {' '}
+            <InfoIcon /> Saber más{' '}
+          </a>
+        </div>
+      ) : (
         <ButtonsProyects
           online={Astro.props.item.online}
           repository={Astro.props.item.repository}
@@ -74,24 +90,28 @@ const { type } = Astro.props
         />
       )
     }
-    {
-      Astro.props.type === 'info' && (
-        <div class='flex'>
-          {' '}
-          <a
-            href={`/${Astro.props.item.path}`}
-            class='flex items-center gap-x-2 font-medium rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 transition hover:from-green-600 hover:to-emerald-600 text-xs md:text-sm text-white py-2 px-3 shadow-md'
-          >
-            {' '}
-            <InfoIcon /> Saber más{' '}
-          </a>{' '}
-        </div>
-      )
-    }
   </div>
 </article>
+
 <style>
   .sombra {
     filter: drop-shadow(-2px 0px 5px rgba(0, 0, 0, 0.1));
+  }
+  article picture {
+    position: relative;
+    display: block;
+    overflow: hidden; /* Asegura que la imagen no salga del contenedor */
+    border-radius: 10px; /* Mantén el borde redondeado */
+  }
+
+  article picture img {
+    transition: transform 0.4s ease; /* Suaviza la animación */
+  }
+
+  article:hover div h3 {
+    text-decoration: underline;
+  }
+  article:hover picture img {
+    transform: scale(1.02); /* Aplica el zoom */
   }
 </style>
