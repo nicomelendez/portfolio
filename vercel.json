@@ -14,7 +14,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+          "value": "default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline' https://vercel.live; style-src 'self' 'unsafe-inline'"
         },
         {
           "key": "X-Frame-Options",
@@ -26,7 +26,7 @@
         },
         {
           "key": "Referrer-Policy",
-          "value": "no-referrer-when-downgrade"
+          "value": "strict-origin-when-cross-origin"
         },
         {
           "key": "Permissions-Policy",
