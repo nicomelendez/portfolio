@@ -7,7 +7,7 @@ const { title, image, resumen, tags } = Astro.props.item
 const { type, item } = Astro.props
 
 const isInfo = type === 'info' ? true : false
-const url = isInfo ? item.path : item.url
+const url = isInfo ? item.path : item.url || item.repository
 
 ---
 
