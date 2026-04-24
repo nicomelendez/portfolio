@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
-import vercel from '@astrojs/vercel/serverless'
+import vercel from '@astrojs/vercel'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,17 +9,18 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  integrations: [tailwind()],
+  integrations: [],
   output: 'server',
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
   vite: {
+    plugins: [tailwindcss()],
     build: {
       cssMinify: 'lightningcss',
     },
     ssr: {
-      noExternal: ['path-to-regexp'],
+      noExternal: ['path-to-regexp', '@midudev/tailwind-animations'],
     },
   },
 })

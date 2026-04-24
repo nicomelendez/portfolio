@@ -1,0 +1,75 @@
+---
+const tags = [
+  'Accesibilidad',
+  'Inteligencia Artificial',
+  'Desarrollo Web',
+  'Sistemas embebidos',
+];
+---
+
+<div class="aura-card">
+  <div class="flex items-start gap-4">
+    <div class="icon-wrap">
+      <img src="/logo-aura.webp" alt="Logo de AURA" />
+    </div>
+    <div class="flex-1 min-w-0">
+      <h4 class="text-lg font-semibold text-gray-900 sombra-low mb-2">AURA</h4>
+      <p class="text-gray-800 leading-relaxed text-sm md:text-base text-pretty">
+        Solución tecnológica orientada a apoyar la <strong
+          >movilidad de personas ciegas y con baja visión</strong
+        > en entornos urbanos. Integra <strong>accesibilidad</strong>, <strong
+          >inteligencia artificial</strong
+        > y <strong>desarrollo web</strong> para generar un impacto real en la autonomía
+        cotidiana.
+      </p>
+      <ul class="flex flex-wrap gap-2 mt-3">
+        {tags.map((tag) => <li class="aura-tag">{tag}</li>)}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  strong {
+    color: #111827;
+  }
+  .aura-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    max-width: 1300px;
+    border: 1px solid rgba(13, 188, 92, 0.18);
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 4px 12px rgba(0, 0, 0, 0.04);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .aura-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 8px 20px rgba(13, 188, 92, 0.1);
+  }
+  .icon-wrap {
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    color: #047857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aura-tag {
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+  }
+</style>

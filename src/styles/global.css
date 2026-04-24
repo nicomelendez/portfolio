@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@midudev/tailwind-animations";
+
+@theme {
+  --color-primary: #e3f7eb;
+  --color-secondary: #fff;
+  --color-tertiary: #4682B4;
+  --color-fourth: #0DBC5C;
+
+  --breakpoint-xs: 360px;
+  --breakpoint-xlbig: 1450px;
+  --breakpoint-xlmax: 1700px;
+}
+
+@variant any-hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @slot;
+    }
+  }
+}

@@ -1,57 +1,124 @@
 ---
-import GitHub from '@/icons/GitHub.astro'
-import LinkedIn from '@/icons/LinkedIn.astro'
-import Photo from '@/utils/Photo.astro'
+import GitHub from '@/icons/GitHub.astro';
+import LinkedIn from '@/icons/LinkedIn.astro';
+import Photo from '@/utils/Photo.astro';
 ---
 
-<section
-  class='flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:gap-x-20 items-center justify-center pt-5 md:pt-0 md:py-10 bg-primary min-h-[90vh] max-h-[650px] mx-auto lg:max-h-none lg:min-h-[70vh] xl:h-[60vh]'
->
-  <Photo />
-
-  <div class='max-w-xl'>
-    <div class='mx-auto text-center lg:text-left'>
-      <h1 class='gradient-text text-4xl xl:text-5xl pb-2'>Nicolás Meléndez</h1>
-      <strong class='font-bold text-tertiary text-xl sm:text-2xl xl:text-3xl'>
-        Técnico Superior en Informática
-      </strong>
-
-      <p class='mt-4 text-balance md:text-nowrap xl:text-lg text-black'>
-        Desarrollador web con experiencia en <strong
-          class='text-[#f1c40f] font-[600]'>JavaScript</strong
-        >, <strong class='text-[#e67e22] font-[600]'>Java</strong>, <strong
-          class='text-[#ff4b4b] font-[600]'>HTML</strong
-        > y <strong class='text-[#3498db] font-[600]'>CSS</strong>.
-      </p>
-      <p class='mt-2 md:mt-0 text-balance md:text-nowrap xl:text-lg text-black'>
-        Manejo herramientas y tecnologías como <strong
-          class='text-[#9b59b6] font-[600]'>Astro</strong
-        >, <strong class='text-[#00a8ff] font-[600]'>React</strong> y <strong
-          class='text-[#2c3e50] font-[600]'>Next.js</strong
-        >.
-      </p>
-
-      <div class='mt-8 flex flex-wrap justify-center lg:justify-start gap-4'>
-        <a
-          href='https://www.linkedin.com/in/nicolas-melendez/'
-          class='text-white flex gap-x-3 bg-[#2f7fa3] hover:bg-[#0b5d8e]/60 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-3 xl:px-5 py-2.5 text-center items-center focus:ring-[#0A66C2]/55 me-2 mb-2 transition-all duration-300'
-          target='_blank'
-          rel='noopener noreferrer'
+<section class="bg-primary">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8 md:px-10 py-10 sm:py-0">
+    <div class="grid items-center gap-5 sm:gap-8 lg:grid-cols-[1fr_1.2fr]">
+      <div class="order-2 text-center lg:text-left">
+        <h1
+          class="mt-0 sm:mt-4 text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight gradient-text"
         >
-          <LinkedIn color='#fff' styles='size-5' />
-          LinkedIn
-        </a>
-
-        <a
-          href='https://github.com/nicomelendez'
-          class='text-white bg-[#24292F] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center flex gap-x-3 items-center focus:ring-gray-500 hover:bg-[#24292F]/60 me-2 mb-2 transition-all duration-300'
-          target='_blank'
-          rel='noopener noreferrer'
+          Nicolás Meléndez
+        </h1>
+        <p
+          class="mt-2 text-base sm:text-lg leading-relaxed text-slate-700 max-w-xl mx-auto lg:mx-0"
         >
-          <GitHub styles='size-5' color='#fff' />
-          GitHub
-        </a>
+          Profesional en Tecnologías de la Información enfocado en
+          transformación digital, automatización y desarrollo de herramientas.
+        </p>
+
+        <div class="mt-6 flex flex-wrap justify-center lg:justify-start gap-2">
+          <span
+            class="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs sm:text-sm font-medium text-blue-700 ring-1 ring-blue-200"
+          >
+            <span aria-hidden="true">🤝</span>Trabajo en equipo
+          </span>
+          <span
+            class="inline-flex items-center gap-1.5 rounded-full bg-purple-50 px-3 py-1 text-xs sm:text-sm font-medium text-purple-700 ring-1 ring-purple-200"
+          >
+            <span aria-hidden="true">💬</span>Comunicación efectiva
+          </span>
+          <span
+            class="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-3 py-1 text-xs sm:text-sm font-medium text-amber-700 ring-1 ring-amber-200"
+          >
+            <span aria-hidden="true">🎯</span>Gestión de proyectos
+          </span>
+          <span
+            class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs sm:text-sm font-medium text-emerald-700 ring-1 ring-emerald-200"
+          >
+            <span aria-hidden="true">💡</span>Resolución de problemas
+          </span>
+          <span
+            class="inline-flex items-center gap-1.5 rounded-full bg-orange-50 px-3 py-1 text-xs sm:text-sm font-medium text-orange-700 ring-1 ring-orange-200"
+          >
+            <span aria-hidden="true">✨</span>Creatividad
+          </span>
+        </div>
+
+        <div class="mt-7 flex flex-wrap justify-center lg:justify-start gap-3">
+          <a
+            href="https://www.linkedin.com/in/nicolas-melendez/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-xl bg-tertiary px-4 py-2.5 text-sm font-semibold text-white sombra-low transition hover:opacity-90"
+          >
+            <LinkedIn color="#fff" styles="size-5" />
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/nicomelendez"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white sombra-low transition hover:opacity-90"
+          >
+            <GitHub styles="size-5" color="#fff" />
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="order-1 flex justify-center">
+        <div class="relative px-15 sm:px-0">
+          <Photo />
+        </div>
       </div>
     </div>
+    <div class="mt-10 flex justify-center">
+      <div
+        class="scroll-indicator inline-flex size-16 items-center justify-center text-tertiary transition sombra"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+          class="size-10 animate-bounce-soft"
+          aria-hidden="true"
+          ><path stroke="none" d="M0 0h24v24H0z"></path><path d="m6 9 6 6 6-6"
+          ></path></svg
+        >
+      </div>
+    </div>
+
+    <style>
+      @keyframes bounce-soft {
+        0%,
+        100% {
+          transform: translateY(0);
+          opacity: 0.75;
+        }
+        50% {
+          transform: translateY(8px);
+          opacity: 1;
+        }
+      }
+
+      .animate-bounce-soft {
+        animation: bounce-soft 1.8s ease-in-out infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .animate-bounce-soft {
+          animation: none;
+        }
+      }
+    </style>
   </div>
 </section>
