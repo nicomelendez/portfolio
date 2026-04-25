@@ -1,70 +1,388 @@
-<ol class='relative border-s border-fourth mb-8'>
-  <li class='mb-5 ms-4'>
-    <div
-      class='absolute w-3 h-3 bg-fourth rounded-full mt-1.5 -start-1.5 border border-fourth'
-    >
-    </div>
-    <span
-      class='inline-flex mx-auto items-center justify-center rounded-full bg-blue-100 px-3 py-1 text-blue-700 sombra-low mb-2'
-    >
-      <time class='whitespace-nowrap text-[10px] md:text-sm'
-        >Diciembre 2024 - Actualmente</time
-      >
-    </span>
+---
+const unicefTech = [
+  'Microsoft Power Platform',
+  'Microsoft 365 Copilot',
+  'Azure',
+  'Ciberseguridad',
+];
 
-    <h3 class='ps-3 text-lg font-semibold text-black sombra-low'>
-      Asistente de TIC en UNICEF Uruguay
-    </h3>
-    <p class='ps-3 mb-4 text-base font-normal text-gray-900'>
-      Brindo soporte tecnológico, gestiono sistemas de ICT y contribuyo a la
-      automatización de procesos en programas enfocados en el desarrollo de la
-      infancia.
-    </p>
+const pymeSkills = [
+  'Escucha activa',
+  'Asesoramiento',
+  'Gestión de proyectos',
+  'Innovación',
+  'Emprendimiento',
+  'Trabajo en territorio',
+];
+---
+
+<ol class="timeline">
+  <li class="timeline-item">
+    <div class="timeline-dot timeline-dot-active" aria-hidden="true">
+      <span class="timeline-dot-pulse"></span>
+    </div>
+    <article class="exp-card">
+      <header class="exp-header">
+        <span class="time-badge time-badge-active">
+          <span class="time-badge-dot"></span>
+          Diciembre 2024 — Actualmente
+        </span>
+        <h3 class="exp-role">Digital Impact Division</h3>
+        <p class="exp-institution">UNICEF Uruguay</p>
+      </header>
+
+      <p class="exp-desc">
+        Participo en iniciativas de <strong>transformación digital</strong>, <strong
+          >automatización de procesos</strong
+        > y gestión de <strong>sistemas ICT</strong>, acompañando la adopción de
+        herramientas digitales por parte de distintos equipos. Lideré el diseño,
+        desarrollo e implementación de una <strong
+          >aplicación interna desplegada en Uruguay y Paraguay</strong
+        >, cubriendo arquitectura, planificación, documentación, pruebas y
+        puesta en producción.
+      </p>
+
+      <ul class="chip-list" aria-label="Herramientas y áreas de foco">
+        {
+          unicefTech.map((item) => (
+            <li class="chip">
+              <span class="chip-dot" />
+              {item}
+            </li>
+          ))
+        }
+      </ul>
+    </article>
   </li>
 
-  <li class='mb-5 ms-4'>
-    <div
-      class='absolute w-3 h-3 bg-fourth rounded-full mt-1.5 -start-1.5 border border-fourth'
-    >
-    </div>
-    <span
-      class='inline-flex items-center justify-start rounded-full bg-emerald-100 px-3 py-1 text-emerald-700 sombra-low mb-2'
-    >
-      <time class='whitespace-nowrap text-[10px] md:text-sm'
-        >Febrero 2024 - Diciembre 2024</time
-      >
-    </span>
+  <li class="timeline-item">
+    <div class="timeline-dot" aria-hidden="true"></div>
+    <article class="exp-card">
+      <header class="exp-header">
+        <span class="time-badge time-badge-past">
+          Febrero 2024 — Diciembre 2024
+        </span>
+        <h3 class="exp-role">Centro PYME de Lavalleja</h3>
+        <p class="exp-institution">
+          Agencia Nacional de Desarrollo (ANDE) · Beca UTEC
+        </p>
+      </header>
 
-    <h3 class='ps-3 text-lg font-semibold text-black sombra-low'>
-      Asistente ejecutivo en Centro PYME de Lavalleja
-    </h3>
-    <p class='ps-3 mb-4 text-base font-normal text-gray-900'>
-      A través de mi beca en el Departamento de Innovación y Emprendimiento de
-      UTEC, he apoyado el desarrollo de micro, pequeñas y medianas empresas de
-      Lavalleja, impulsando la innovación y el emprendimiento.
-    </p>
-    <div class='ps-3'>
+      <p class="exp-desc">
+        A través de una beca en el Departamento de Innovación y Emprendimiento
+        de UTEC, participé en el acompañamiento a micro, pequeñas y medianas
+        empresas de Lavalleja, apoyando procesos vinculados a <strong
+          >innovación</strong
+        >, <strong>digitalización</strong> y fortalecimiento de capacidades emprendedoras.
+      </p>
+      <p class="exp-desc">
+        Colaboré en actividades de <strong>asistencia técnica</strong>,
+        organización de información y apoyo a iniciativas orientadas al
+        desarrollo productivo y territorial.
+      </p>
+
+      <ul class="chip-list" aria-label="Habilidades y áreas de foco">
+        {
+          pymeSkills.map((item) => (
+            <li class="chip">
+              <span class="chip-dot" />
+              {item}
+            </li>
+          ))
+        }
+      </ul>
+
       <a
-        href='https://drive.google.com/file/d/1mil4D_AXhv-41fiQVKl78y0WbnfZrCay/view?usp=sharing'
-        target='_blank'
-        rel='noopener noreferrer'
-        class='inline-flex items-center px-4 py-2 text-sm font-medium bg-fourth border border-fourth rounded-lg focus:z-10 focus:ring-4 hover:contrast-125 text-white cursor-pointer'
+        href="https://drive.google.com/file/d/1mil4D_AXhv-41fiQVKl78y0WbnfZrCay/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cta-link"
       >
         Ver carta de recomendación
         <svg
-          class='w-3 h-3 ms-2 rtl:rotate-180'
-          aria-hidden='true'
-          xmlns='http://www.w3.org/2000/svg'
-          fill='none'
-          viewBox='0 0 14 10'
-          ><path
-            stroke='currentColor'
-            stroke-linecap='round'
-            stroke-linejoin='round'
-            stroke-width='2'
-            d='M1 5h12m0 0L9 1m4 4L9 9'></path></svg
+          class="cta-icon"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
         >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          ></path>
+        </svg>
       </a>
-    </div>
+    </article>
   </li>
 </ol>
+
+<style>
+  /* Timeline structure */
+  .timeline {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1.75rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.4375rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      rgba(13, 188, 92, 0.4),
+      rgba(13, 188, 92, 0.15) 60%,
+      rgba(13, 188, 92, 0.05)
+    );
+    border-radius: 2px;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Timeline dots */
+  .timeline-dot {
+    position: absolute;
+    left: -1.5625rem;
+    top: 1.5rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 9999px;
+    background-color: #cbd5e1;
+    box-shadow: 0 0 0 4px #e3f7eb;
+  }
+
+  .timeline-dot-active {
+    background-color: #0dbc5c;
+    box-shadow:
+      0 0 0 4px #e3f7eb,
+      0 0 0 6px rgba(13, 188, 92, 0.18);
+  }
+
+  .timeline-dot-pulse {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background-color: rgba(13, 188, 92, 0.5);
+    animation: pulse 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.6);
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .timeline-dot-pulse {
+      animation: none;
+    }
+  }
+
+  /* Card surface — soft sage, not pure white */
+  .exp-card {
+    background-color: #f4faf5;
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid rgba(13, 188, 92, 0.14);
+    box-shadow:
+      0 1px 2px rgba(15, 23, 42, 0.03),
+      0 8px 24px rgba(13, 188, 92, 0.05);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+  .exp-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(13, 188, 92, 0.28);
+    box-shadow:
+      0 1px 2px rgba(15, 23, 42, 0.04),
+      0 12px 32px rgba(13, 188, 92, 0.1);
+  }
+
+  /* Header block */
+  .exp-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .exp-role {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .exp-institution {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #475569;
+    margin: 0;
+  }
+
+  /* Description */
+  .exp-desc {
+    font-size: 0.9375rem;
+    color: #334155;
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+    text-wrap: pretty;
+  }
+
+  .exp-desc:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .exp-desc strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  /* Date badges */
+  .time-badge {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4375rem;
+    padding: 0.3125rem 0.75rem 0.3125rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    letter-spacing: 0.01em;
+  }
+
+  .time-badge-dot {
+    width: 0.4375rem;
+    height: 0.4375rem;
+    border-radius: 9999px;
+    background-color: #0dbc5c;
+    box-shadow: 0 0 0 3px rgba(13, 188, 92, 0.18);
+  }
+
+  .time-badge-active {
+    background-color: rgba(13, 188, 92, 0.1);
+    color: #0a6b35;
+    border: 1px solid rgba(13, 188, 92, 0.22);
+  }
+
+  .time-badge-past {
+    padding-left: 0.75rem;
+    background-color: rgba(100, 116, 139, 0.08);
+    color: #475569;
+    border: 1px solid rgba(100, 116, 139, 0.18);
+  }
+
+  /* Chips */
+  .chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4375rem;
+    padding: 0.375rem 0.75rem 0.375rem 0.625rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #334155;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(13, 188, 92, 0.16);
+    border-radius: 9999px;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .chip:hover {
+    background-color: #ffffff;
+    border-color: rgba(13, 188, 92, 0.4);
+    color: #0f172a;
+  }
+
+  .chip-dot {
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 9999px;
+    background-color: #0dbc5c;
+    flex-shrink: 0;
+  }
+
+  /* CTA — outline style */
+  .cta-link {
+    margin-top: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5625rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0a7d3e;
+    background-color: transparent;
+    border: 1px solid rgba(13, 188, 92, 0.3);
+    border-radius: 0.625rem;
+    transition: all 0.2s ease;
+  }
+
+  .cta-link:hover {
+    background-color: #0dbc5c;
+    border-color: #0dbc5c;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(13, 188, 92, 0.25);
+  }
+
+  .cta-icon {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    transition: transform 0.2s ease;
+  }
+
+  .cta-link:hover .cta-icon {
+    transform: translate(1px, -1px);
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 640px) {
+    .timeline {
+      padding-left: 1.5rem;
+    }
+
+    .exp-card {
+      padding: 1.25rem;
+    }
+
+    .exp-role {
+      font-size: 1.125rem;
+    }
+  }
+</style>

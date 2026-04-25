@@ -1,58 +1,59 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import { getInfo, informations } from '@/lib/index.ts'
-import DriveIcon from '@/components/icons/Drive.astro'
-import WaveUp from '@/components/wave/WaveUp.astro'
-import WaveDown from '@/components/wave/WaveDown.astro'
-import BtnVisitar from '@/components/btn/BtnVisitar.astro'
-import BtnGithub from '@/components/btn/BtnGithub.astro'
-import BtnAtras from '@/components/btn/BtnAtras.astro'
+import Layout from '@/layouts/Layout.astro';
+import { getInfo, informations } from '@/lib/index.ts';
+import DriveIcon from '@/components/icons/Drive.astro';
+import WaveUp from '@/components/wave/WaveUp.astro';
+import WaveDown from '@/components/wave/WaveDown.astro';
+import BtnVisitar from '@/components/btn/BtnVisitar.astro';
+import BtnGithub from '@/components/btn/BtnGithub.astro';
+import BtnAtras from '@/components/btn/BtnAtras.astro';
 
 export function getStaticPaths() {
-  return informations.map(({path})=> {
-    return {params: {path: path}}
-  })
+  return informations.map(({ path }) => {
+    return { params: { path: path } };
+  });
 }
 
-export const prerender = true
+export const prerender = true;
 
-const { path } = Astro.params
+const { path } = Astro.params;
 
 if (path == null) {
-  return Astro.redirect('/')
+  return Astro.redirect('/');
 }
 
-const info = getInfo(path)
+const info = getInfo(path);
 
 if (info == null) {
-  return Astro.redirect('/')
+  return Astro.redirect('/');
 }
 
-const { title, image, link, github, drive, descripcion, aprendisaje, tags } = info
+const { title, image, link, github, drive, descripcion, aprendisaje, tags } =
+  info;
 ---
 
 <Layout title={`${title} - Nicolás Meléndez`}>
   <BtnAtras />
   <section
-    class='bg-[#E3F7EB] flex flex-col items-start pb-12 md:pb-0 gap-y-10 xl:flex-row justify-center gap-x-10 pt-5 px-5 md:px-14'
+    class="bg-[#E3F7EB] flex flex-col items-start pb-12 md:pb-0 gap-y-10 xl:flex-row justify-center gap-x-10 pt-5 px-5 md:px-14"
   >
-    <div class='space-y-4 w-full xl:max-w-[600px] xlbig:max-w-[700px]'>
+    <div class="space-y-4 w-full xl:max-w-150 xlbig:max-w-175">
       <h2
-        class='text-center lg:text-left text-3xl xl:text-4xl font-bold text-fourth text-balance'
+        class="text-center lg:text-left text-3xl xl:text-4xl font-bold text-fourth text-balance"
       >
         {title}
       </h2>
-      <p class='text-pretty pt-3 text-sm sm:text-base'>
+      <p class="text-pretty pt-3 text-sm sm:text-base">
         {descripcion}
       </p>
-      <ul class='flex flex-wrap gap-2 flex-row items-center'>
+      <ul class="flex flex-wrap gap-2 flex-row items-center">
         {
           tags.map((tag: any) => (
             <li>
               <span
                 class={`flex gap-x-1 items-center rounded-full text-xs xlmax:text-sm ${tag.class} py-1.5 px-2 border border-white/10 shadow-md`}
               >
-                <tag.icon class='size-4 ize-5:size-5' />
+                <tag.icon class="size-4 ize-5:size-5" />
                 {tag.name}
               </span>
             </li>
@@ -60,17 +61,17 @@ const { title, image, link, github, drive, descripcion, aprendisaje, tags } = in
         }
       </ul>
       <div
-        class='flex justify-center sm:justify-start items-center gap-x-4 pt-3 flex-wrap'
+        class="flex justify-center sm:justify-start items-center gap-x-4 pt-3 flex-wrap"
       >
         {link && <BtnVisitar url={link} />}
         {github && <BtnGithub repository={github} />}
         {
           drive && (
             <a
-              target='_blank'
-              rel='noopener noreferrer'
+              target="_blank"
+              rel="noopener noreferrer"
               href={drive}
-              class='flex items-center gap-x-2 text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-xs py-2 px-3 shadow-md text-center'
+              class="flex items-center gap-x-2 text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-xs py-2 px-3 shadow-md text-center"
             >
               <DriveIcon />
               Recursos
@@ -80,10 +81,10 @@ const { title, image, link, github, drive, descripcion, aprendisaje, tags } = in
       </div>
     </div>
 
-    <div class='flex flex-col gap-y-8'>
-      <picture class='rounded-lg'>
+    <div class="flex flex-col gap-y-8">
+      <picture class="rounded-lg">
         <img
-          class='w-full xl:max-w-[500px] xlbig:max-w-[700px] object-cover rounded-lg shadow-lg'
+          class="w-full xl:max-w-125 xlbig:max-w-175 object-cover rounded-lg shadow-lg"
           src={image}
           transition:name={`card-${path}`}
           alt={`Imagen de ${title}`}
@@ -93,18 +94,18 @@ const { title, image, link, github, drive, descripcion, aprendisaje, tags } = in
   </section>
   <WaveUp />
   <section
-    class='flex flex-col items-center gap-y-4 pt-10 pb-20 px-5 md:px-14 bg-white'
+    class="flex flex-col items-center gap-y-4 pt-10 pb-20 px-5 md:px-14 bg-white"
   >
-    <div class='space-y-8'>
-      <h3 class='text-2xl font-bold text-center text-fourth'>
-        <span class='pr-2 text-[#45745a] text-balance'>#</span>¿Qué aprendi?
+    <div class="space-y-8">
+      <h3 class="text-2xl font-bold text-center text-fourth">
+        <span class="pr-2 text-[#45745a] text-balance">#</span>¿Qué aprendi?
       </h3>
-      <p class='text-sm sm:text-base max-w-[880px] text-pretty'>
+      <p class="text-sm sm:text-base max-w-220 text-pretty">
         {aprendisaje}
       </p>
     </div>
   </section>
-  <WaveDown/>
+  <WaveDown />
 </Layout>
 <style>
   .sombra {
