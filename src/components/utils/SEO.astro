@@ -1,31 +1,64 @@
+---
+const siteUrl = 'https://www.nicomelendez.dev';
+
+const title =
+  Astro.props.title ??
+  'Nicolás Meléndez | Transformación digital y tecnología con impacto';
+
+const description =
+  'Profesional en Tecnologías de la Información enfocado en transformación digital, automatización de procesos y desarrollo de soluciones tecnológicas con impacto institucional.';
+
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const ogImage = new URL('/page.webp', siteUrl).toString();
+
+const keywords = [
+  'Nicolás Meléndez',
+  'transformación digital',
+  'automatización de procesos',
+  'tecnologías de la información',
+  'soluciones digitales',
+  'sistemas ICT',
+  'tecnología con impacto',
+  'Power Platform',
+  'Microsoft 365',
+  'Azure',
+  'Astro',
+  'React',
+  'Uruguay',
+].join(', ');
+---
+
+<title>{title}</title>
+
+<meta name="description" content={description} />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Nicolás Meléndez" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content={keywords} />
+<meta name="theme-color" content="#DFF5E8" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="canonical" href={canonicalUrl} />
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta
-  name='description'
-  content='Técnico Superior en Informática, desarrollador de soluciones web, móviles y de escritorio. Trabajo con tecnologías como Astro, Next.js, JavaServer Pages, JavaEE, Kotlin, SQL Developer y MongoDB para crear aplicaciones innovadoras y eficientes.'
+  property="og:image:alt"
+  content="Portfolio profesional de Nicolás Meléndez"
 />
-<meta name='viewport' content='width=device-width' />
-<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-<link rel="canonical" href="https://www.nicomelendez.dev/" />
-<meta property='og:title' content={Astro.props.title} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Nicolás Meléndez" />
+<meta property="og:locale" content="es_UY" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
 <meta
-  property='og:description'
-  content='Técnico Superior en Informática, desarrollador de soluciones web, móviles y de escritorio. Trabajo con tecnologías como Astro, Next.js, JavaServer Pages, JavaEE, Kotlin, SQL Developer y MongoDB para crear aplicaciones innovadoras y eficientes.'
-/>
-<meta name="keywords" content="Nicolás Meléndez, desarrollador web, desarrollador móviles, desarrollador de escritorio, frontend, backend, Astro, Next.js, JavaServer Pages, JavaEE, Kotlin, SQL Developer, MongoDB, Programador Nicolás Meléndez" />
-<meta
-  property='og:image'
-  content='https://www.nicomelendez.dev/page.webp'
-/>
-<meta property='og:image:width' content='1200' />
-<meta property='og:image:height' content='630' />
-<meta property='og:url' content='https://www.nicomelendez.dev/' />
-<meta property='og:type' content='website' />
-<meta name='twitter:card' content='summary_large_image' />
-<meta name='twitter:title' content={Astro.props.title} />
-<meta
-  name='twitter:description'
-  content='Técnico Superior en Informática, desarrollador de soluciones web, móviles y de escritorio. Trabajo con tecnologías como Astro, Next.js, JavaServer Pages, JavaEE, Kotlin, SQL Developer y MongoDB para crear aplicaciones innovadoras y eficientes.'
-/>
-<meta
-  name='twitter:image'
-  content='https://www.nicomelendez.dev/page.webp'
+  name="twitter:image:alt"
+  content="Portfolio profesional de Nicolás Meléndez"
 />
